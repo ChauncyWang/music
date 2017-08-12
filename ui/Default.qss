@@ -1,0 +1,105 @@
+#main_window {
+    border-image: url(:/jpg/bg1);
+    color: red;
+}
+
+#title_bar {
+    background-color: #8080FFFF;
+}
+
+#play_bar {
+    background-color: #80000000;
+}
+
+#left_frame {
+    background-color: #80FFFFFF;
+}
+
+#cur_time, #total_time, #song_info {
+    color: #AFAFAF;
+}
+
+#img {
+    border: 1px inset #FFFFFF;
+}
+
+SearchTable {
+    background-color: #a0ffffff;
+}
+
+#lyric {
+    color: #FF0080;
+}
+
+#lyric2 {
+    color: #00FF80;
+}
+
+#btn_pre_song, #play_pause, #btn_next_song {
+    color: #00aaaf;
+    border: 2px outset beige;
+    border-radius: 20px;
+
+}
+
+QComboBox {
+    border-radius: 4px;
+    border: 1px solid #00aaaf;
+    padding: 1px 0px 2px 6px;
+    font-size: 8pt;
+    color: #00aaaf;
+    background: transparent;
+}
+
+QComboBox::drop-down {
+    width: 0px;
+    border: none;
+    background: transparent;
+}
+
+QSlider:groove:vertical {
+    border: 1px solid #00688B;
+    width: 5px;
+    border-radius: 3px;
+}
+
+QSlider:handle:vertical {
+    background: qradialgradient(spread:pad,
+    cx: 0.5,
+    cy: 0.5,
+    radius: 0.5,
+    fx: 0.5,
+    fy: 0.5,
+    stop: 0.6 #45ADED,
+    stop: 0.778409 rgba(255, 255, 255, 255));
+    height: 10px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border-radius: 5px;
+}
+
+QSlider:handle:vertical:hover {
+    background: qradialgradient(spread:pad,
+    cx: 0.5,
+    cy: 0.5,
+    radius: 0.5,
+    fx: 0.5,
+    fy: 0.5,
+    stop: 0.6 #2A8BDA,
+    stop: 0.778409 rgba(255, 255, 255, 255));
+    height: 10px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border-radius: 5px;
+}
+
+QSlider:add-page {
+    border-radius: 3px;
+    background: qlineargradient(x1:0,
+    y1: 0,
+    x2: 0,
+    y2: 1,
+    stop: 0 #009ACD,
+    stop: 1 #008B8B);
+    margin: 2px 0;
+}

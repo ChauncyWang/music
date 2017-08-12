@@ -1,0 +1,93 @@
+{
+  "message": "",
+  "notice": "",
+  "tips": "",
+  "time": 1502328158,
+  "code": 0,
+  "subcode": 0,
+  "data": {
+    "keyword": "周杰伦",
+    "qc": [],
+    "taglist": [],
+    "priority": 0,
+    "totaltime": 0,
+    "semantic": {
+      "list": [],
+      "totalnum": 0,
+      "curnum": 0,
+      "curpage": 1
+    },
+    "zhida": {
+      "type": 0,
+      "chinesesinger": 0
+    },
+    "song": {
+      "list": [
+        {
+          "belongCD": 0,
+          "alertid": 100002,
+          "ver": 0,
+          "preview": {
+            "tryend": 85421,
+            "trybegin": 65138,
+            "trysize": 325589
+          },
+          "newStatus": 2,
+          "sizeogg": 5001304,
+          "size320": 8608939,
+          "chinesesinger": 0,
+          "singer": [
+            {
+              "id": 4558,
+              "name": "周杰伦",
+              "name_hilight": "<em>周杰伦</em>",
+              "mid": "0025NhlN2yWrP4"
+            }
+          ],
+          "strMediaMid": "003OUlho2HcRHC",
+          "lyric": "",
+          "tag": 0,
+          "stream": 1,
+          "albumname": "周杰伦的床边故事",
+          "songname_hilight": "告白气球",
+          "msgid": 16,
+          "albumname_hilight": "<em>周杰伦</em>的床边故事",
+          "size128": 3443771,
+          "pubtime": 1466697600,
+          "t": 1,
+          "media_mid": "003OUlho2HcRHC",
+          "songid": 107192078,
+          "nt": 1967005487,
+          "songname": "告白气球",
+          "albumid": 1458791,
+          "pay": {
+            "paydownload": 1,
+            "payalbum": 1,
+            "payinfo": 1,
+            "paytrackprice": 200,
+            "paytrackmouth": 1,
+            "payalbumprice": 2000,
+            "payplay": 0
+          },
+          "interval": 215,
+          "lyric_hilight": "",
+          "docid": "7065911643897223382",
+          "cdIdx": 8,
+          "albummid": "003RMaRI1iFoYd",
+          "isonly": 0,
+          "vid": "u00222le4ox",
+          "type": 0,
+          "grp": [],
+          "sizeflac": 24971563,
+          "sizeape": 24929083,
+          "switch": 17413891,
+          "songmid": "003OUlho2HcRHC",
+          "pure": 0
+        }
+      ],
+      "totalnum": 398,
+      "curnum": 1,
+      "curpage": 1
+    }
+  }
+}

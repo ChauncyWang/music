@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html class="ks-gecko54 ks-gecko ks-firefox54 ks-firefox"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script charset="utf-8" src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/a" async=""></script>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>正在播放:不想长大-S.H.E</title>
+		<meta name="data-spm" content="a1z1s">
+		<meta charset="UTF-8">
+												
+		<link rel="shortcut icon" id="dynamic-favicon" type="image/x-icon" href="http://res.xiami.net/play.ico">
+		<link rel="stylesheet" type="text/css" href="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/old.css">
+				<link rel="stylesheet" type="text/css" href="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/a_002.css">
+				
+		<!-- kirov start -->
+		<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/index.js" app="xiami"></script>
+		<!-- kirov end -->
+		
+		<style>
+		#J_header .friend {background: none;}
+		#J_header .user {background: none;border-left:none;}
+		#J_header .user .avatar {border: 2px solid rgba(255,255, 255, 0);}
+		#J_header .unlogin {padding: 0 8px;}
+		#J_header .user .arrow {margin-top: 11px;height: 30px;line-height:30px;width: 30px;border: 2px solid rgba(255,255, 255, 0);text-align: center;}
+		</style>
+		
+	<link charset="utf-8" href="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/a.css" rel="stylesheet"></head>
+	<body data-spm="7154410" class=""><script id="tb-beacon-aplus" src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/aplus_v2.js" exparams="category=&amp;userid=&amp;aplus&amp;yunid=&amp;&amp;asid=AAC4cY5ZiRzBD5EAWtI="></script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AAC4cY5ZiRzBD5EAWtI=",id="tb-beacon-aplus",src=(location>"https"?"//s":"//a")+".tbcdn.cn/s/aplus_v2.js")
+</script>
+
+		
+		<div id="J_xiamiPlayerWrap"><div id="J_xiamiPlayer"></div></div>
+		<div id="J_blurBackground"><canvas class="ui-canvas ui-canvas-current" id="J_Player_Canvas_Even" style="width: 100%; height: 100%;" width="1351" height="318"></canvas><canvas class="ui-canvas" id="J_Player_Canvas_Odd" style="width: 100%; height: 100%;" width="1351" height="318"></canvas></div>
+		<div id="player-main">
+			<div id="top">
+				<div id="J_header">
+					<div class="logo">
+						<h1><a href="http://www.xiami.com/" target="_blank">虾米音乐</a></h1>
+					</div>
+					<div class="search-wrap">
+						<div class="search-content">
+							<form action="http://www.xiami.com/search" method="get" id="search" target="_blank">
+							<input id="J_searchStatus" type="submit">
+							<input name="pos" value="1" type="hidden">
+							<div class="search-input"><input id="J_searchInput" autocomplete="off" name="key" type="text"></div>
+							</form>
+						</div>
+					</div>
+				
+					<div class="userinfo" id="J_userInfo">
+												<div class="user unlogin">
+							<div class="arrow">
+																<img src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/TB1URHjLpXXXXcHXVXXXXXXXXXX-28-20.png" width="14" height="10">
+							</div>
+						</div>
+						<div class="mod-login" id="J_login">
+							<div class="login-content">马上 <a href="javascript:;" id="J_miniLogin">登录</a></div>
+						</div>
+											</div>
+					
+				</div>
+			</div>
+			<div id="middle" class="playing">
+				<div id="J_mainWrap" class="main-wrap">
+					<!-- 侧边栏  begin -->
+					<div class="main-sidebar">
+						<div class="menu-outer">
+							<ul id="J_sidebarMenu">
+								<li class="current" id="J_menuPlaying" data-page="J_pagePlayList">
+									<a><i class="icon-play"></i>正在播放</a>
+								</li>
+								<li id="J_menuHistory" data-page="J_pageHistory">
+									<a><i class="icon-history"></i>播放历史</a>
+								</li>
+								<li id="J_menuMyfav" data-page="J_pageMyfav">
+									<a><i class="icon-myfav"></i>我收藏的单曲</a>
+								</li>
+							</ul>
+						</div>
+						<div class="collect-outer">
+							<div class="collect-title">
+								<h3>我创建的歌单</h3>
+								<span><a class="icon-addCollect" id="J_createCollect" title="新建歌单"></a></span>
+							</div>
+						</div>
+						<div class="collect-list">
+							<div id="J_collectScrollView" class="ks-scroll-view">
+								<!-- 滚动内容 -->
+								<div class="ks-scroll-view-content" id="J_collectList"><div class="collect-none"></div></div>
+								<!-- 滚动内容 end -->
+							</div>
+						</div>
+						<div class="promotion-block">
+							<a href="http://www.xiami.com/apps/mobile" target="_blank"><img src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/TB1Q5DVNpXXXXbjXVXXXXXXXXXX-185-100.png"></a>
+						</div>
+					</div>
+					<!-- 侧边栏 end -->
+					<div id="J_tab" class="main-body">
+						<!-- 正在播放 begin -->
+						<div id="J_pagePlayList" class="main-page" data-spm="1996860241" style="display:block">
+							<div class="ui-playlist-header ui-row-item">
+								<div class="ui-row-item-body">
+									<div class="ui-row-item-column c1">
+										歌曲<span id="J_trackCount">(30)</span>
+									</div>
+									<div class="ui-row-item-column c2">
+										演唱者
+									</div>
+									<div class="ui-row-item-column c3">
+										专辑
+									</div>
+								</div>
+							</div>
+							<div class="ui-playlist-body">
+
+								<div id="J_tracksScrollView" class="ks-scroll-view">
+									<!-- 歌曲列表 -->
+									<div id="ks-component531" class="ks-scrollbar
+
+ ks-scrollbar-y  
+
+" style="-moz-user-select: none;"><div id="ks-scrollbar-arrow-up-ks-component531" class="ks-scrollbar-y-arrow-up">
+    <a href="javascript:void('up')">up</a>
+</div>
+<div id="ks-scrollbar-arrow-down-ks-component531" class="ks-scrollbar-y-arrow-down">
+    <a href="javascript:void('down')">down</a>
+</div>
+<div id="ks-scrollbar-track-ks-component531" class="ks-scrollbar-y-track">
+<div id="ks-scrollbar-drag-ks-component531" class="ks-scrollbar-y-drag" style="height: 52.3302px;">
+<div class="ks-scrollbar-y-drag-top">
+</div>
+<div class="ks-scrollbar-y-drag-center">
+</div>
+<div class="ks-scrollbar-y-drag-bottom">
+</div>
+</div>
+</div></div><div class="ks-scroll-view-content">
+										<!-- 列表 begin -->
+										<div class="ui-tracks-wrap" id="J_playTracksList">
+
+<div class="ui-row-item ui-track-item" data-sid="373568" data-index="1" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList373568">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track373568" value="373568" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>1</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="373568"><a href="http://www.xiami.com/song/373568" target="_blank" title="Super Star">Super Star</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="2931"><a href="http://www.xiami.com/artist/2931" target="_blank" title="S.H.E">S.H.E</a></div>
+		<div class="ui-row-item-column c3" data-album-id="32156"><a href="http://www.xiami.com/album/32156" target="_blank" title="Super Star">Super Star</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap373568">
+	
+	<div class="ui-roam-head"><a class="ui-roam-open" data-event="roam">漫游相似歌曲</a></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="387950" data-index="2" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList387950">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track387950" value="387950" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>2</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="387950"><a href="http://www.xiami.com/song/387950" target="_blank" title="只对你有感觉">只对你有感觉</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="7172"><a href="http://www.xiami.com/search/find/artist/%E9%A3%9E%E8%BD%AE%E6%B5%B7" target="_blank" title="飞轮海">飞轮海</a> ; <a href="http://www.xiami.com/search/find/artist/%E7%94%B0%E9%A6%A5%E7%94%84" target="_blank" title="田馥甄">田馥甄</a></div>
+		<div class="ui-row-item-column c3" data-album-id="32591"><a href="http://www.xiami.com/album/32591" target="_blank" title="飞轮海首张同名专辑">飞轮海首张同名专辑</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap387950">
+	
+	<div class="ui-roam-head"><a class="ui-roam-open" data-event="roam">漫游相似歌曲</a></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item ui-track-current" data-sid="373604" data-index="3" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList373604">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track373604" value="373604" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>3</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="373604"><a href="http://www.xiami.com/song/373604" target="_blank" title="不想长大">不想长大</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="2931"><a href="http://www.xiami.com/artist/2931" target="_blank" title="S.H.E">S.H.E</a></div>
+		<div class="ui-row-item-column c3" data-album-id="15037"><a href="http://www.xiami.com/album/15037" target="_blank" title="不想长大">不想长大</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap373604">
+	
+	<div class="ui-roam-head"><a class="ui-roam-open" data-event="roam">漫游相似歌曲</a></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1774595903" data-index="4" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1774595903">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1774595903" value="1774595903" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>4</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1774595903"><a href="http://www.xiami.com/song/1774595903" target="_blank" title="大梦想家">大梦想家</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="175346199"><a href="http://www.xiami.com/artist/175346199" target="_blank" title="TFBOYS">TFBOYS</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2100186130"><a href="http://www.xiami.com/album/2100186130" target="_blank" title="大梦想家">大梦想家</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1774595903">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1774490672" data-index="5" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1774490672">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1774490672" value="1774490672" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>5</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1774490672"><a href="http://www.xiami.com/song/1774490672" target="_blank" title="小幸运">小幸运</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="7158"><a href="http://www.xiami.com/search/find/artist/%E7%94%B0%E9%A6%A5%E7%94%84" target="_blank" title="田馥甄">田馥甄</a></div>
+		<div class="ui-row-item-column c3" data-album-id="1136455538"><a href="http://www.xiami.com/album/1136455538" target="_blank" title="我的少女时代 电影歌曲原声带">我的少女时代 电影歌曲原声带</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1774490672">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1769723966" data-index="6" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1769723966">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1769723966" value="1769723966" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>6</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1769723966"><a href="http://www.xiami.com/song/1769723966" target="_blank" title="欧若拉">欧若拉</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="7169"><a href="http://www.xiami.com/search/find/artist/%E5%BC%A0%E9%9F%B6%E6%B6%B5" target="_blank" title="张韶涵">张韶涵</a></div>
+		<div class="ui-row-item-column c3" data-album-id="398394"><a href="http://www.xiami.com/album/398394" target="_blank" title="听风的歌 踩着音符去旅行">听风的歌 踩着音符去旅行</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1769723966">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="49645" data-index="7" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList49645">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track49645" value="49645" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>7</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="49645"><a href="http://www.xiami.com/song/49645" target="_blank" title="三国恋">三国恋</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="849"><a href="http://www.xiami.com/artist/849" target="_blank" title="Tank">Tank</a></div>
+		<div class="ui-row-item-column c3" data-album-id="4058"><a href="http://www.xiami.com/album/4058" target="_blank" title="Fighting!生存之道">Fighting!生存之道</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap49645">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1775713590" data-index="8" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1775713590">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1775713590" value="1775713590" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>8</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1775713590"><a href="http://www.xiami.com/song/1775713590" target="_blank" title="丑八怪 (Live)">丑八怪 (Live)</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="634530812"><a href="http://www.xiami.com/search/find/artist/%E8%96%9B%E4%B9%8B%E8%B0%A6" target="_blank" title="薛之谦">薛之谦</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2100391706"><a href="http://www.xiami.com/album/2100391706" target="_blank" title="现场合集">现场合集</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1775713590">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1771135899" data-index="9" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1771135899">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1771135899" value="1771135899" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>9</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1771135899"><a href="http://www.xiami.com/song/1771135899" target="_blank" title="有点甜">有点甜</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="75411"><a href="http://www.xiami.com/search/find/artist/%E6%B1%AA%E8%8B%8F%E6%B3%B7" target="_blank" title="汪苏泷">汪苏泷</a> ; <a href="http://www.xiami.com/search/find/artist/By2" target="_blank" title="By2">By2</a></div>
+		<div class="ui-row-item-column c3" data-album-id="523816"><a href="http://www.xiami.com/album/523816" target="_blank" title="万有引力">万有引力</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1771135899">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="385650" data-index="10" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList385650">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track385650" value="385650" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>10</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="385650"><a href="http://www.xiami.com/song/385650" target="_blank" title="奔跑">奔跑</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="413"><a href="http://www.xiami.com/search/find/artist/%E9%BB%84%E5%BE%81" target="_blank" title="黄征">黄征</a> ; <a href="http://www.xiami.com/search/find/artist/%E7%BE%BD%C2%B7%E6%B3%89" target="_blank" title="羽·泉">羽·泉</a></div>
+		<div class="ui-row-item-column c3" data-album-id="1838"><a href="http://www.xiami.com/album/1838" target="_blank" title="爱情诺曼底">爱情诺曼底</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap385650">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="380241" data-index="11" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList380241">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track380241" value="380241" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>11</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="380241"><a href="http://www.xiami.com/song/380241" target="_blank" title="暖暖">暖暖</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="1836"><a href="http://www.xiami.com/artist/1836" target="_blank" title="梁静茹">梁静茹</a></div>
+		<div class="ui-row-item-column c3" data-album-id="10061"><a href="http://www.xiami.com/album/10061" target="_blank" title="亲亲">亲亲</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap380241">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1795263120" data-index="12" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1795263120">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1795263120" value="1795263120" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>12</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1795263120"><a href="http://www.xiami.com/song/1795263120" target="_blank" title="刚好遇见你">刚好遇见你</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="84275"><a href="http://www.xiami.com/artist/84275" target="_blank" title="李玉刚">李玉刚</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102651456"><a href="http://www.xiami.com/album/2102651456" target="_blank" title="刚好遇见你">刚好遇见你</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1795263120">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="29609" data-index="13" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList29609">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track29609" value="29609" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>13</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="29609"><a href="http://www.xiami.com/song/29609" target="_blank" title="童话">童话</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="298"><a href="http://www.xiami.com/artist/298" target="_blank" title="光良">光良</a></div>
+		<div class="ui-row-item-column c3" data-album-id="1395"><a href="http://www.xiami.com/album/1395" target="_blank" title="童话">童话</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap29609">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="87617" data-index="14" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList87617">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track87617" value="87617" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>14</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="87617"><a href="http://www.xiami.com/song/87617" target="_blank" title="爱情三十六计">爱情三十六计</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="1354"><a href="http://www.xiami.com/artist/1354" target="_blank" title="蔡依林">蔡依林</a></div>
+		<div class="ui-row-item-column c3" data-album-id="7118"><a href="http://www.xiami.com/album/7118" target="_blank" title="J-Top冠军精选">J-Top冠军精选</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap87617">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="45182" data-index="15" data-note="" data-type="track" data-needpay="1" data-playstatus="1" data-downloadstatus="2" data-json="%7B%22LOW%22%3A%22NEED_PAY%22%2C%22HIGH%22%3A%22NEED_PAY%22%7D" id="J_trackList45182">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track45182" value="45182" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>15</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="45182"><a href="http://www.xiami.com/song/45182" target="_blank" title="快乐崇拜">快乐崇拜</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="768"><a href="http://www.xiami.com/search/find/artist/%E6%BD%98%E7%8E%AE%E6%9F%8F" target="_blank" title="潘玮柏">潘玮柏</a> ; <a href="http://www.xiami.com/search/find/artist/%E5%BC%A0%E9%9F%B6%E6%B6%B5" target="_blank" title="张韶涵">张韶涵</a></div>
+		<div class="ui-row-item-column c3" data-album-id="3673"><a href="http://www.xiami.com/album/3673" target="_blank" title="Wu Ha">Wu Ha</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap45182">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1773704090" data-index="16" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1773704090">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1773704090" value="1773704090" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>16</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1773704090"><a href="http://www.xiami.com/song/1773704090" target="_blank" title="超级英雄">超级英雄</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="86804"><a href="http://www.xiami.com/artist/86804" target="_blank" title="邓超">邓超</a></div>
+		<div class="ui-row-item-column c3" data-album-id="1515934676"><a href="http://www.xiami.com/album/1515934676" target="_blank" title="超级英雄">超级英雄</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1773704090">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1775271708" data-index="17" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1775271708">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1775271708" value="1775271708" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>17</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1775271708"><a href="http://www.xiami.com/song/1775271708" target="_blank" title="大王叫我来巡山">大王叫我来巡山</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="7158"><a href="http://www.xiami.com/search/find/artist/%E8%B4%BE%E4%B9%83%E4%BA%AE" target="_blank" title="贾乃亮">贾乃亮</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2100245460"><a href="http://www.xiami.com/album/2100245460" target="_blank" title="万万没想到 电影原声带">万万没想到 电影原声带</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1775271708">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="374040" data-index="18" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList374040">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track374040" value="374040" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>18</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="374040"><a href="http://www.xiami.com/song/374040" target="_blank" title="离开地球表面">离开地球表面</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="3110"><a href="http://www.xiami.com/artist/3110" target="_blank" title="五月天">五月天</a></div>
+		<div class="ui-row-item-column c3" data-album-id="15626"><a href="http://www.xiami.com/album/15626" target="_blank" title="离开地球表面 Jump!">离开地球表面 Jump!</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap374040">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="380252" data-index="19" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList380252">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track380252" value="380252" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>19</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="380252"><a href="http://www.xiami.com/song/380252" target="_blank" title="勇气">勇气</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="1836"><a href="http://www.xiami.com/artist/1836" target="_blank" title="梁静茹">梁静茹</a></div>
+		<div class="ui-row-item-column c3" data-album-id="10075"><a href="http://www.xiami.com/album/10075" target="_blank" title="勇气">勇气</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap380252">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="148187" data-index="20" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList148187">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track148187" value="148187" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>20</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="148187"><a href="http://www.xiami.com/song/148187" target="_blank" title="睫毛弯弯">睫毛弯弯</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="2202"><a href="http://www.xiami.com/artist/2202" target="_blank" title="王心凌">王心凌</a></div>
+		<div class="ui-row-item-column c3" data-album-id="12038"><a href="http://www.xiami.com/album/12038" target="_blank" title="Cyndi With U">Cyndi With U</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap148187">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="392737" data-index="21" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList392737">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track392737" value="392737" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>21</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="392737"><a href="http://www.xiami.com/song/392737" target="_blank" title="新窝">新窝</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="7172"><a href="http://www.xiami.com/search/find/artist/%E9%A3%9E%E8%BD%AE%E6%B5%B7" target="_blank" title="飞轮海">飞轮海</a> ; <a href="http://www.xiami.com/search/find/artist/S.H.E" target="_blank" title="S.H.E">S.H.E</a></div>
+		<div class="ui-row-item-column c3" data-album-id="32909"><a href="http://www.xiami.com/album/32909" target="_blank" title="双面飞轮海">双面飞轮海</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap392737">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="130762" data-index="22" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList130762">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track130762" value="130762" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>22</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="130762"><a href="http://www.xiami.com/song/130762" target="_blank" title="后来">后来</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="1930"><a href="http://www.xiami.com/artist/1930" target="_blank" title="刘若英">刘若英</a></div>
+		<div class="ui-row-item-column c3" data-album-id="10600"><a href="http://www.xiami.com/album/10600" target="_blank" title="滚石香港黄金十年 刘若英精选">滚石香港黄金十年 刘若英精选</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap130762">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796385059" data-index="23" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1796385059">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796385059" value="1796385059" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>23</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796385059"><a href="http://www.xiami.com/song/1796385059" target="_blank" title="SE-NO (せーの)">SE-NO (せーの)</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="274486896"><a href="http://www.xiami.com/artist/274486896" target="_blank" title="慢慢说">慢慢说</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102800698"><a href="http://www.xiami.com/album/2102800698" target="_blank" title="SE-NO (せーの)">SE-NO (せーの)</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796385059">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796197870" data-index="24" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1796197870">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796197870" value="1796197870" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>24</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796197870"><a href="http://www.xiami.com/song/1796197870" target="_blank" title="鼓声若响">鼓声若响</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="783"><a href="http://www.xiami.com/artist/783" target="_blank" title="齐秦">齐秦</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102788722"><a href="http://www.xiami.com/album/2102788722" target="_blank" title="鼓声若响">鼓声若响</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796197870">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1775691014" data-index="25" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1775691014">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1775691014" value="1775691014" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>25</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1775691014"><a href="http://www.xiami.com/song/1775691014" target="_blank" title="林中鸟">林中鸟</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="2100012614"><a href="http://www.xiami.com/artist/2100012614" target="_blank" title="葛林">葛林</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2100283384"><a href="http://www.xiami.com/album/2100283384" target="_blank" title="林中鸟">林中鸟</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1775691014">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796430807" data-index="26" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1796430807">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796430807" value="1796430807" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>26</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796430807"><a href="http://www.xiami.com/song/1796430807" target="_blank" title="梦诛缘·锁清秋">梦诛缘·锁清秋</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="224"><a href="http://www.xiami.com/artist/224" target="_blank" title="费玉清">费玉清</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102808304"><a href="http://www.xiami.com/album/2102808304" target="_blank" title="梦诛缘·锁清秋">梦诛缘·锁清秋</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796430807">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796405384" data-index="27" data-note="" data-type="track" data-needpay="1" data-playstatus="1" data-downloadstatus="2" data-json="%7B%22LOW%22%3A%22NEED_PAY%22%2C%22HIGH%22%3A%22NEED_PAY%22%7D" id="J_trackList1796405384">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796405384" value="1796405384" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>27</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796405384"><a href="http://www.xiami.com/song/1796405384" target="_blank" title="我脑中的妳">我脑中的妳</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="62763"><a href="http://www.xiami.com/artist/62763" target="_blank" title="梁晓雪">梁晓雪</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102803801"><a href="http://www.xiami.com/album/2102803801" target="_blank" title="耳边风景">耳边风景</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796405384">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796054031" data-index="28" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1796054031">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796054031" value="1796054031" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>28</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796054031"><a href="http://www.xiami.com/song/1796054031" target="_blank" title="孤芳自赏">孤芳自赏</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="1377486022"><a href="http://www.xiami.com/artist/1377486022" target="_blank" title="左安西西">左安西西</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102778764"><a href="http://www.xiami.com/album/2102778764" target="_blank" title="孤芳自赏">孤芳自赏</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796054031">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1792683739" data-index="29" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1792683739">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1792683739" value="1792683739" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>29</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1792683739"><a href="http://www.xiami.com/song/1792683739" target="_blank" title="TT">TT</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="2099991784"><a href="http://www.xiami.com/artist/2099991784" target="_blank" title="TWICE">TWICE</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102411730"><a href="http://www.xiami.com/album/2102411730" target="_blank" title="TWICEcoaster : LANE 1">TWICEcoaster : LANE 1</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1792683739">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+
+
+<div class="ui-row-item ui-track-item" data-sid="1796416726" data-index="30" data-note="" data-type="track" data-needpay="0" data-playstatus="1" data-downloadstatus="1" data-json="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D" id="J_trackList1796416726">
+
+<div class="ui-track-main">
+	<div class="ui-track-checkbox">
+		
+		<input class="ui-track-item-id" name="track" id="J_track1796416726" value="1796416726" type="checkbox">
+		
+	</div>
+	<div class="ui-track-sort"><em>30</em></div>
+	<div class="ui-row-item-body">
+		<div class="ui-row-item-column c1" data-id="1796416726"><a href="http://www.xiami.com/song/1796416726" target="_blank" title="胡八一你不要来">胡八一你不要来</a></div>
+		
+		<div class="ui-row-item-column c2" data-artist-id="71453"><a href="http://www.xiami.com/search/find/artist/%E9%98%AE%E7%BB%8F%E5%A4%A9" target="_blank" title="阮经天">阮经天</a> ; <a href="http://www.xiami.com/search/find/artist/%E9%A9%AC%E5%BF%B5%E5%85%88" target="_blank" title="马念先">马念先</a></div>
+		<div class="ui-row-item-column c3" data-album-id="2102805672"><a href="http://www.xiami.com/album/2102805672" target="_blank" title="胡八一你不要来">胡八一你不要来</a></div>
+		
+	</div>
+	<div class="ui-track-control">
+		
+		
+		<a class="fav-btn icon-track-fav" data-type="track" data-event="fav" title="收藏"></a>
+		
+		<a class="more-btn icon-track-more" data-type="track" data-event="more" title="更多"></a>
+		
+		<a class="delete-btn icon-track-delete" data-type="track" data-event="delete" title="删除"></a>
+	</div>
+</div>
+
+<div class="ui-roam-wrap" id="J_roamWrap1796416726">
+	
+	<div class="ui-roam-head"></div>
+	
+</div>
+
+</div>
+</div>
+										<!-- 列表 end -->
+									</div>
+									<!-- 歌曲列表 end -->
+								</div>
+
+							</div>
+							<div class="ui-playlist-footer">
+								<div class="ui-track-all">
+									<div class="ui-all-checkbox">
+										<input id="J_checkAll_track" onclick="SEIYA.syncCheck(this,'track')" type="checkbox">
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-delete" id="J_trackListDelete">删除</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-fav" id="J_trackListFav">收藏</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-add" id="J_trackListAdd" onclick="SEIYA.collects('track')">添加到歌单</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-more" data-type="track" data-event="more" id="J_trackListMore">更多</a>
+									</div>
+									<div id="playInAppWrap">
+                    <a class="icon-tracks-app" data-event="playapp" id="J_playInApp">手机继续听</a>
+                  </div>
+								</div>
+							</div>
+						</div>
+						<!-- 正在播放 end -->
+
+						<!-- 播放历史 begin -->
+						<div id="J_pageHistory" class="main-page" data-spm="1996860237" style="display: none">
+							<div class="ui-history-title">
+								<div class="ui-history-title-con">
+									<a class="icon-playAllBtn" title="播放全部" id="J_playAllMyfav" onclick="SEIYA.addPlaySongs('history')"></a>
+									<h2>播放历史</h2>
+									<p id="J_historyCount">
+										<span>loading</span>
+									</p>
+								</div>
+							</div>
+							<div class="ui-history-header ui-row-item">
+								<div class="ui-row-item-body">
+									<div class="ui-row-item-column c1">
+										歌曲
+									</div>
+									<div class="ui-row-item-column c2">
+										演唱者
+									</div>
+									<div class="ui-row-item-column c3">
+										试听时间
+									</div>
+								</div>
+							</div>
+							<div class="ui-history-body">
+
+								<div id="J_historyScrollView" class="ks-scroll-view">
+									<!-- 歌曲列表 -->
+									<div class="ks-scroll-view-content">
+										<!-- 列表 begin -->
+										<div class="ui-tracks-wrap" id="J_historyTracksList">
+
+										</div>
+										<!-- 列表 end -->
+									</div>
+									<!-- 歌曲列表 end -->
+								</div>
+
+							</div>
+							<div class="ui-history-footer">
+								<div class="ui-track-all">
+									<div class="ui-all-checkbox">
+										<input id="J_checkAll_history" onclick="SEIYA.syncCheck(this,'history')" type="checkbox">
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-play" onclick="SEIYA.playAllSongs('history')">播放</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-add" onclick="SEIYA.collects('history')">添加到歌单</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-more" data-type="history" data-event="more">更多</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 播放历史 end -->
+
+						<!-- 我收藏的单曲 begin -->
+						<div id="J_pageMyfav" class="main-page" data-spm="1996860218" style="display:none">
+							<div class="ui-myfav-title">
+								<div class="ui-myfav-title-con">
+									<a class="icon-playAllBtn" title="播放全部" id="J_playAllMyfav" onclick="SEIYA.addPlaySongs('fav')"></a>
+									<h2>我收藏的单曲</h2>
+									<p id="J_favCount">
+										<span>loading </span>
+									</p>
+								</div>
+							</div>
+							<div class="ui-myfav-header ui-row-item">
+								<div class="ui-row-item-body">
+									<div class="ui-row-item-column c1">
+										歌曲
+									</div>
+									<div class="ui-row-item-column c2">
+										演唱者
+									</div>
+									<div class="ui-row-item-column c3">
+										专辑
+									</div>
+								</div>
+							</div>
+							<div class="ui-myfav-body">
+								<div id="J_myfavScrollView" class="ks-scroll-view">
+									<div class="ks-scroll-view-content">
+										<!-- 收藏单曲 begin -->
+										<div class="ui-tracks-wrap" id="J_myFavTracksList">
+
+										</div>
+										<!-- 收藏单曲 begin -->
+									</div>
+								</div>
+							</div>
+							<div class="ui-myfav-footer">
+								<div class="ui-track-all">
+									<div class="ui-all-checkbox">
+										<input id="J_checkAll_fav" onclick="SEIYA.syncCheck(this,'fav')" type="checkbox">
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-play" onclick="SEIYA.playAllSongs('fav')">播放</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-add" onclick="SEIYA.collects('fav')">添加到歌单</a>
+									</div>
+									<div class="ui-all-item">
+										<a class="icon-tracks-more" data-type="fav" data-event="more">更多</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 我收藏的单曲 end -->
+
+						<!-- 歌单 detail -->
+						<div id="J_pageCollect" class="main-page" data-spm="1996860182" style="display:none">
+
+						</div>
+						<!-- 歌单 detail end -->
+					</div>
+					<div id="J_lrcWrap" class="main-outher" data-spm="1996860293">
+						<div class="ui-album-cover" id="J_albumCover">
+							<div id="J_playerCover" class="ui-album-img"><a href="http://www.xiami.com/album/15037" target="_blank" title="不想长大-S.H.E"><img id="J_playerCoverImg" src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/150371470299140.jpg" alt="不想长大-S.H.E"></a></div>
+						</div>
+						<!-- <div class="ui-album-sale" id="J_albumSale" data-spm="1997588397"></div> -->
+						<div class="ui-player-lrc" id="J_lyricScrollWrap">
+							<div id="J_lyricScrollView" class="ks-scroll-view">
+								<div id="ks-component870" class="ks-scrollbar
+
+ ks-scrollbar-y  
+
+" style="-moz-user-select: none;"><div id="ks-scrollbar-arrow-up-ks-component870" class="ks-scrollbar-y-arrow-up">
+    <a href="javascript:void('up')">up</a>
+</div>
+<div id="ks-scrollbar-arrow-down-ks-component870" class="ks-scrollbar-y-arrow-down">
+    <a href="javascript:void('down')">down</a>
+</div>
+<div id="ks-scrollbar-track-ks-component870" class="ks-scrollbar-y-track">
+<div id="ks-scrollbar-drag-ks-component870" class="ks-scrollbar-y-drag" style="height: 20px; transform: translateX(0px) translateY(131.38px) translateZ(0px);">
+<div class="ks-scrollbar-y-drag-top">
+</div>
+<div class="ks-scrollbar-y-drag-center">
+</div>
+<div class="ks-scrollbar-y-drag-bottom">
+</div>
+</div>
+</div></div><div class="ks-scroll-view-content" style="transform: translateX(0px) translateY(-1111px) translateZ(0px);">
+									<div class="ui-player-lrc-wrap" id="J_playerLrc">
+<ul>
+
+
+
+<li class="ui-lrc-line">S.H.E-不想长大</li>
+
+
+
+<li class="ui-lrc-line">作词：施人诚</li>
+
+
+
+<li class="ui-lrc-line">作曲：左安安 / 莫扎特</li>
+
+
+
+<li class="ui-lrc-line">为什麽就是找不到不谢的玫瑰花</li>
+
+
+
+<li class="ui-lrc-line">为什麽遇见的王子都不够王子啊</li>
+
+
+
+<li class="ui-lrc-line">我并不期盼他会有玻璃鞋和白马</li>
+
+
+
+<li class="ui-lrc-line">我惊讶的是情话竟然会变成谎话</li>
+
+
+
+<li class="ui-lrc-line">为什麽幸福的青鸟要飞的那麽高</li>
+
+
+
+<li class="ui-lrc-line">为什麽苹果和拥抱都可能是毒药</li>
+
+
+
+<li class="ui-lrc-line">我从没想过有了他还孤单的可怕</li>
+
+
+
+<li class="ui-lrc-line">我突然想起从前陪我那个洋娃娃</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後我就会失去他</li>
+
+
+
+<li class="ui-lrc-line">我深爱的他 深爱我的他</li>
+
+
+
+<li class="ui-lrc-line">已经变得不像他</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後世界就没童话</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">我宁愿永远都笨又傻</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後我就会失去他</li>
+
+
+
+<li class="ui-lrc-line">我深爱的他 深爱我的他</li>
+
+
+
+<li class="ui-lrc-line">怎麽会爱上别打扰的他</li>
+
+
+
+<li class="ui-lrc-line">我愿意在他回来前继续安静沉睡</li>
+
+
+
+<li class="ui-lrc-line">但他已去到别座城堡吻另一双嘴</li>
+
+
+
+<li class="ui-lrc-line">为什麽对流星许愿却从来没实现</li>
+
+
+
+<li class="ui-lrc-line">为什麽英勇的骑士会比龙还危险</li>
+
+
+
+<li class="ui-lrc-line">我当然知道这世界不会完美无瑕</li>
+
+
+
+<li class="ui-lrc-line">我只求爱情能够不要那麽样复杂</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後世界就没童话</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">我宁愿永远都笨又傻</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後我就会失去他</li>
+
+
+
+<li class="ui-lrc-line">天真愚蠢快乐美好</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後世界就没童话</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">我宁愿永远都笨又傻</li>
+
+
+
+<li class="ui-lrc-line">我不想我不想不想长大</li>
+
+
+
+<li class="ui-lrc-line">长大後我就会失去他</li>
+
+
+
+<li class="ui-lrc-line">我深爱的他 深爱我的他</li>
+
+
+
+<li class="ui-lrc-line ui-lrc-current">怎麽会爱上别的他</li>
+
+
+
+<li class="ui-lrc-line">好音质,天天动听!</li>
+
+
+</ul>
+
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottom">
+				<div id="J_playerWrap">
+					<div class="player-info" data-spm="1996860142">
+						<div class="track-info">
+							<div id="J_trackInfo" class="player-track-info">
+
+<a id="J_trackName" href="http://www.xiami.com/song/373604" title="不想长大" target="_blank">不想长大</a> - <a href="http://www.xiami.com/artist/2931" target="_blank" title="S.H.E">S.H.E</a>
+
+</div>
+							<div class="track-controls">
+								<a id="J_trackFav" class="icon-fav" data-sid="373604" title="收藏"></a>
+								<a id="J_trackShare" class="icon-share" data-sid="373604" title="分享"></a>
+								<a id="J_trackComment" class="icon-comment" data-sid="373604" title="评论"></a>
+								<a id="J_trackMore" class="icon-more" data-sid="373604" title="更多" data-downloadjson="%7B%22LOW%22%3A%22FREE%22%2C%22HIGH%22%3A%22FREE%22%7D"></a>
+							</div>
+						</div>
+						<div class="player-length">
+							<div class="player-position" id="J_positionTime">03:39</div>
+							<div class="player-progress">
+								<div class="progress" id="J_playerProgress">
+									<div class="loading" style="width: 100%;"></div>
+									<div class="playing" style="width: 97.1166%;"></div>
+								</div>
+								<div class="panel" id="J_playerPanel">
+									<a class="player-dot" id="J_playerDot" style="left: 97.1166%;"></a>
+								</div>
+							</div>
+							<div class="player-duration" id="J_durationTime">03:46</div>
+						</div>
+					</div>
+					<div class="player-controls">
+						<a id="J_prevBtn" class="prev-btn"></a>
+						<a id="J_playBtn" class="pause-btn"></a>
+						<a id="J_nextBtn" class="next-btn"></a>
+						<div class="player-mode">
+							<a id="J_playerMode" class="mode-order" title="顺序播放"></a>
+						</div>
+					</div>
+					<div class="player-volume">
+						<a id="J_playerHQ" class="mode-hq-on1" data-hq="off"></a>
+						<span id="J_translate" class="click" style="display:none;">译</span>
+						<div id="volume">
+							<div id="J_volumeSpeaker" class="volume-on"></div>
+							<div class="volume-wrap" id="J_volumeRange">
+								<div class="volume-panel">
+									<div class="volume-cur" style="width:50%"></div>
+								</div>
+								<div class="volume-control">
+									<a class="volume-dot" style="left: 36px;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/a.js"></script>
+		<script type="text/javascript">
+            var _xiamitoken = '40af2edb27443060fc65732ff3736918';
+			
+            function 
+showDialog(a,b){$(".dialog_popup").length||$("body").prepend('<div 
+id="dialog_clt" class="dialog_popup"><div class="dialog_main"></div><div
+ class="jqDrag"></div></div>'),b||(b='<div class="dialog_content"><p 
+class="loading">虾小米正为您在处理数据, 
+请稍
+候...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div><a
+ href="" 
+class="jqmClose">关闭</a>'),a?a+=(a.match(/\?
+/)?"&":"?")+"_xiamitoken="+_xiamitoken:$(".dialog_main").html(b),$(".dialog_popup").jqm({ajax:a,modal:!0,target:".dialog_main",ajaxText:b,onLoad:function(){$(".dialog_popup").css({"margin-left":"-"+$(".dialog_main").width()/2+"px","margin-top":"-"+$(".dialog_main").height()/2+"px"})},onShow:function(){$(".dialog_popup").show()},onHide:function(){$(".dialog_popup").css({"margin-left":"-130px","margin-top":"-25px",top:"50%",left:"50%"}).hide(),$(".jqmOverlay").hide()}}).jqDrag(".jqDrag").jqmShow()}function
+ closedialog(){$(".dialog_popup").jqmHide()}function 
+dialogbg(){"msie"==getBrowser()&&$(".dialog_sharp").height($(".dialog_main").height())}function
+ getBrowser(){var c,a=navigator.userAgent.toLowerCase(),b=new 
+Array("msie","firefox","safari","opera","netscape");for(c=0;c<b.length;c++)if(-1!=a.indexOf(b[c]))return
+ b[c];return"other"}
+			
+			var USER_SIGNKEY = '';
+		</script>
+					<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/seed-min.js" type="text/javascript"></script>
+		
+<script>
+KISSY.config({
+	combine : true,
+	packages : {
+		'widget' : {
+			debug : false,
+			tag : "20140305173316",
+			path : (- 1 === location.host.indexOf('www.xiami.com') ? 
+'http://g.assets.daily.taobao.net/' : 'http://g.alicdn.com/') + 
+'music/music-player/0.9.36/',
+			charset : "utf-8"
+		}
+	}
+});
+</script>
+
+<script>
+var DEBUG = '0';
+var ENV = 'prod';
+var USER_GENDER = '';
+</script>
+<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/a_002" type="text/javascript"></script>
+<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/third.js" type="text/javascript"></script>
+
+<div style="display:none">
+<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/stat.php" language="JavaScript" charset="gb2312"></script><script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/core_002.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=921634" target="_blank" title="站长统计">站长统计</a>
+<script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/stat_002.php" language="JavaScript"></script><script src="%E6%AD%A3%E5%9C%A8%E6%92%AD%E6%94%BE%20%E4%B8%8D%E6%83%B3%E9%95%BF%E5%A4%A7-S.H.E_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=2629111" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+	
+
+<div class="search-result" id="J_searchResult" style="display:none"></div><div class="tip-twitter" id="J_playerHQ-tip" style="position: absolute; left: 995.5px; top: 367px; max-width: 300px; display: none;"><div class="tip-inner tip-bg-image"><p class="tip_60d"><a href="http://www.xiami.com/apps/mobile?vip" target="_blank"><strong>即刻享受高品质</strong>对耳朵好一点 更纯粹 更细节</a></p></div><div class="tip-arrow tip-arrow-bottom" style="visibility: inherit;"></div></div></body></html>
