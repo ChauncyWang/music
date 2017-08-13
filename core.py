@@ -117,9 +117,13 @@ class DownloadThread(Thread):
             os.makedirs(self.path)
             logging.info("创建缓存文件夹[%s]..." % self.path)
         # 对文件名进行MD5加密
-        md5 = hashlib.md5()
-        md5.update(self.file_name.encode('utf8'))
-        file_name = md5.hexdigest()
+        use_md = False
+        if use_md:
+            md5 = hashlib.md5()
+            md5.update(self.file_name.encode('utf8'))
+            file_name = md5.hexdigest()
+        else:
+            file_name = self.file_name
         file_name = self.path + file_name
         # 查找缓存文件
         if os.path.exists(file_name):

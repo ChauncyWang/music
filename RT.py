@@ -1,11 +1,14 @@
 import sys
 
-from music.ui.components import *
-from music.ui import resource
+from ui.components import *
+from ui import resource
+import logging
+import requests
+logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s', )
-
 
 def test():
     a = NeteaseAPI().search_songs('S.H.E')
@@ -39,7 +42,12 @@ def testcore():
     a = core.search("薛之谦", 0, 20)
     print(a)
 
+def test_media():
+    app = QApplication(sys.argv)
+    player = QMediaPlayer()
+    player.setMedia(QMediaContent(QUrl.fromLocalFile('D:\\ChavaMusic\\cache\\mp3\\我们的歌谣True.m4a')))
+    player.play()
+    print(player.state())
+    sys.exit(app.exec_())
 
-test_time_label()
-
-
+test_media()

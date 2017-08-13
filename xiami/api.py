@@ -2,7 +2,8 @@ from http import cookiejar
 
 import requests
 
-from music.api import BaseAPI
+from api import BaseAPI
+from xiami.config import search_url
 
 
 class XiamiAPI(BaseAPI):
@@ -16,10 +17,13 @@ class XiamiAPI(BaseAPI):
         pass
 
     def search(self, content, t, page, num):
-        pass
+        url = search_url + "%s/page/%d" % (t, page)
+        params = {'key': content}
+        resp = self.get(url, params=params)
+        return resp
 
-    def search_songs(self, content, page, num):
-        pass
+    def search_songs(self, content, page, num=0):
+        self.search(content, 'song', page, num)
 
     def song_url(self, song):
         pass

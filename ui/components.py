@@ -351,7 +351,7 @@ class Lyric(QFrame):
     def init(self):
         self.setGeometry(400, 800, 800, 80)
         self.setObjectName('lyric_bar')
-        # self.setWindowFlags(Qt.SubWindow | Qt.Popup | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
+        self.setWindowFlags(Qt.SubWindow | Qt.Popup | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
         self.setMouseTracking(True)
         self.lyric.setObjectName('lyric')
@@ -643,6 +643,11 @@ class ProgressBar(QFrame):
 
 
 class ProgressGroup(QFrame):
+    """
+    进度组件
+    包含控件:当前时间标签，总时间标签和进度条
+    """
+    # 进度改变信号，由鼠标点击或拖拉进度条产生
     signal_rate_changed = pyqtSignal(float)
 
     def __init__(self, parent=None):
@@ -720,6 +725,10 @@ class Player:
 
 
 class PopFrame(QFrame):
+    """
+    一个可以跟随图标移动的弹窗
+    跟随移动需要在要跟随的控件哪里设置（就是自己计算了）
+    """
     def __init__(self):
         super().__init__()
         self.padding = 3
@@ -750,8 +759,10 @@ class PopFrame(QFrame):
 
 class VolumeButton(AwesomeLabel):
     """
-    声音控件组
+    声音控制组件
+    自身(self)点击(clicked)时，计算弹窗的位置并显示
     """
+    # 声音改变的信号
     signal_volume_changed = pyqtSignal(int)
 
     def __init__(self, parent=None):
@@ -786,20 +797,27 @@ class VolumeButton(AwesomeLabel):
         self.sli_volume.valueChanged.connect(self.slot_volume)
 
     def slot_calc_pos(self):
+        """ 计算声音修改弹窗的位置，让其跟随声音图标位置显示 """
         pos = self.parent().mapToGlobal(self.pos())
         # pos = self.pos()
         self.pop_volume.setGeometry(pos.x(), pos.y() - 100, self.width(), 100)
         self.pop_volume.show()
 
     def slot_mute(self):
+        """ 声音静音 """
         self.muted = not self.muted
         if self.muted:
             self.cl_volume.setText('\uf026')
             self.signal_volume_changed.emit(0)
         else:
             self.slot_volume(self.sli_volume.value())
+        logging.debug("[静音]:%s -> %s" % (not self.muted, self.muted))
 
     def slot_volume(self, x):
+        """
+        声音改变
+        :param x: 该变量
+        """
         if x > 80:
             self.cl_volume.setText('\uf028')
         elif x > 0:
@@ -807,9 +825,16 @@ class VolumeButton(AwesomeLabel):
         else:
             self.cl_volume.setText('\uf026')
         self.signal_volume_changed.emit(x)
+        logging.debug("[声音改变]: -> %s" % (x))
 
 
 class FromFrame(QFrame):
+    """
+    播放图标显示
+    根据播放源显示不同的图标
+    目前只支持qq音乐盒和网易云音乐
+    """
+    # 播放信号
     signal_play = pyqtSignal(Song, bool)
 
     def __init__(self, parent=None, f=0, song=None):
@@ -822,15 +847,18 @@ class FromFrame(QFrame):
         self.init_components()
         self.signal_slot()
 
+    def signal_slot(self):
+        """ 连接信号和槽 """
+        # 使用 qq音乐的源播放音乐
+        self.qqmusic.clicked.connect(lambda : self.signal_play.emit(self.song, True))
+        # 使用 网易云音乐的源播放音乐
+        self.netease.clicked.connect(lambda: self.signal_play.emit(self.song, False))
+
     def init_components(self):
         self.setMinimumSize(50, 20)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.qqmusic.setStyleSheet("border-image: url(:/png/qqmusic);")
         self.netease.setStyleSheet("border-image: url(:/png/netease);")
-
-    def signal_slot(self):
-        self.qqmusic.clicked.connect(self.qqmusic_play)
-        self.netease.clicked.connect(self.netease_play)
 
     def paintEvent(self, event):
         w = self.width()
@@ -847,11 +875,3 @@ class FromFrame(QFrame):
         else:
             self.netease.hide()
             self.qqmusic.hide()
-
-    def qqmusic_play(self):
-        """ 播放   qq 音乐 """
-        self.signal_play.emit(self.song, True)
-
-    def netease_play(self):
-        """ 播放 网易云音乐 """
-        self.signal_play.emit(self.song, False)

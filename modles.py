@@ -79,3 +79,11 @@ class Quality:
     def __init__(self):
         self.bit_rate = None
         self.size = None
+
+class SongList:
+    """
+    播放列表
+    """
+
+    def __init__(self):
+        self.songs = []

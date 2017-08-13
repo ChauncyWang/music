@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QApplication
 from ui.components import MainWindow
 from ui import resource
 
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
 
 app = QApplication(sys.argv)
