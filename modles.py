@@ -22,6 +22,7 @@ class Song:
             c = self.artists == other.artists
             return a and b and c
 
+
 class Songs(list):
     def __str__(self):
         s = ''
@@ -79,6 +80,7 @@ class Quality:
     def __init__(self):
         self.bit_rate = None
         self.size = None
+
 
 class SongList:
     """

@@ -15,7 +15,6 @@ song_url = 'http://music.163.com/weapi/song/enhance/player/url?csrf_token='
 lyric_url = 'http://music.163.com/api/song/lyric'
 toplist_url = 'http://music.163.com/discover/toplist'
 
-
 header = {
     "Host": "music.163.com",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0",
@@ -25,7 +24,8 @@ header = {
     "Connection": "keep-alive",
     "Cache-Control": "max-age=0",
 }
-root_path = '/ChavaMusic/'
+r = os.environ['HOME']
+root_path = '%s/ChavaMusic/' % r
 cookie_path = root_path + 'cookie'
 cache_path = root_path + 'cache/'
 

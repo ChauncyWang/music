@@ -1,3 +1,4 @@
+from exception_handle import exception, QParseException
 from modles import *
 from qq import QQ
 
@@ -50,3 +51,54 @@ class QAlbum(Album):
         self.id = None
         self.mid = None
         self.name = None
+
+
+class Parse:
+    @staticmethod
+    @exception
+    def parse_song(dic):
+        try:
+            song = QSong()
+            song.id = dic['id']
+            song.mid = dic['mid']
+            song.name = dic['name']
+            song.artists = Parse.parse_artists(dic['singer'])
+            song.album = Parse.parse_album(dic['album'])
+            song.dt = dic['interval'] * 1000
+            song.action = dic['action']['msg']
+            song.pay = dic['pay']['pay_down']
+            return song
+        except KeyError:
+            raise QParseException("Parse Song Exception")
+
+    @staticmethod
+    @exception
+    def parse_artist(dic):
+        try:
+            artist = QArtist()
+            artist.id = dic['id']
+            artist.mid = dic['mid']
+            artist.name = dic['name']
+            return artist
+        except KeyError:
+            raise QParseException("Parse Artist Exception")
+
+    @staticmethod
+    def parse_artists(dic):
+        artists = Artists()
+        for i in dic:
+            artist = Parse.parse_artist(i)
+            artists.append(artist)
+        return artists
+
+    @staticmethod
+    @exception
+    def parse_album(dic):
+        try:
+            album = QAlbum()
+            album.id = dic['id']
+            album.mid = dic['mid']
+            album.name = dic['name']
+            return album
+        except KeyError:
+            raise QParseException("Parse Album Exception")

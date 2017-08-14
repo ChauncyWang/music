@@ -50,3 +50,7 @@ class ParameterException(Exception):
 class QParseException(Exception):
     def __init__(self, msg):
         self.msg = msg
+
+class NParseException(Exception):
+    def __init__(self, msg):
+        self.msg = msg

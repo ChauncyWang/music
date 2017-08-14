@@ -7,7 +7,7 @@ import requests
 from api import BaseAPI
 from netease.models import *
 from netease.config import *
-from netease.encrypt import encrypted_request
+from netease.util import encrypted_request
 
 from exception_handle import *
 from http import cookiejar

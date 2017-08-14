@@ -34,7 +34,7 @@ def aes_encrypt(text, sec_key):
 
 def rsa_encrypt(text, pub_key, modulus):
     """
-    RSA 加密采用非常规填充方式，既不是PKCS1也不是PKCS1_OAEP，网易的做法是直接向前补0
+    RSA 加密采用非常规填充方式，网易是直接向前补0
     :param text: 要加密文本
     :param pub_key: 公钥
     :param modulus: 加密系数
