@@ -12,6 +12,7 @@ from models import *
 from netease.models import *
 from ui.config import *
 from core import *
+from util import Configuration
 
 """
 QFontDatabase.addApplicationFont(os.path.dirname(__file__) + '/res/font/fontawesome-webfont.ttf')
@@ -70,7 +71,6 @@ class PlayBar(QFrame):
 
     def __init__(self, core, parent):
         super().__init__(parent)
-        QFontDatabase.addApplicationFont(os.path.dirname(__file__) + '/res/font/fontawesome-webfont.ttf')
         self.play_buttons = PlayButtonGroup(self)
         self.process_bar = ProgressGroup(self)
         self.song_info = QLabel(self)
@@ -349,7 +349,14 @@ class Lyric(QFrame):
         self.init()
 
     def init(self):
-        self.setGeometry(400, 800, 800, 80)
+        Configuration.load_config()
+        configuration = Configuration.config
+        x = Configuration.get(100, 'ui', 'lyric', 'x')
+        y = Configuration.get(800, 'ui', 'lyric', 'y')
+        w = Configuration.get(400, 'ui', 'lyric', 'w')
+        h = Configuration.get(80, 'ui', 'lyric', 'h')
+        self.single_line = Configuration.get(False, 'ui', 'lyric', 'single')
+        self.setGeometry(x, y, w, h)
         self.setObjectName('lyric_bar')
         self.setWindowFlags(Qt.SubWindow | Qt.Popup | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
@@ -363,7 +370,7 @@ class Lyric(QFrame):
 
     def update_lyric(self, x):
         lyric_index = 0
-        while lyric_index < len(self.lyrics):
+        while lyric_index < len(self.lyrics) - 1:
             line = self.lyrics[lyric_index]
             result = re.search(r'\[(\d*):(\d*).(\d*)]', line)
             if result is None:
@@ -427,6 +434,13 @@ class Lyric(QFrame):
                 painter.setPen(pen)
                 painter.drawRoundedRect(self.rect(), 10, 10)
                 painter.drawRoundedRect(3, 3, self.width() - 6, self.height() - 6, 8, 8)
+
+        Configuration.config['ui']['lyric']['x'] = self.pos().x()
+        Configuration.config['ui']['lyric']['y'] = self.pos().y()
+        Configuration.config['ui']['lyric']['w'] = self.width()
+        Configuration.config['ui']['lyric']['h'] = self.height()
+        Configuration.config['ui']['lyric']['single'] = self.single_line
+        Configuration.save_config()
 
     def enterEvent(self, event):
         self.enter = True
@@ -712,23 +726,12 @@ class ProgressGroup(QFrame):
         self.progress_bar.setGeometry(self.w, self.h / 2 - r, self.width() - self.w * 2, r * 2)
 
 
-class Player:
-    def __init__(self):
-        self.player = QMediaPlayer()
-        self.list = []
-
-    def slot_next(self):
-        pass
-
-    def slot_pre(self):
-        pass
-
-
 class PopFrame(QFrame):
     """
     一个可以跟随图标移动的弹窗
     跟随移动需要在要跟随的控件哪里设置（就是自己计算了）
     """
+
     def __init__(self):
         super().__init__()
         self.padding = 3
@@ -850,7 +853,7 @@ class FromFrame(QFrame):
     def signal_slot(self):
         """ 连接信号和槽 """
         # 使用 qq音乐的源播放音乐
-        self.qqmusic.clicked.connect(lambda : self.signal_play.emit(self.song, True))
+        self.qqmusic.clicked.connect(lambda: self.signal_play.emit(self.song, True))
         # 使用 网易云音乐的源播放音乐
         self.netease.clicked.connect(lambda: self.signal_play.emit(self.song, False))
 

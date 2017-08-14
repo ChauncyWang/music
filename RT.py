@@ -50,4 +50,6 @@ def test_media():
     print(player.state())
     sys.exit(app.exec_())
 
-test_media()
+# test_media()
+for i in range(0, 1000):
+    print(i, Random().randint(0, 9))

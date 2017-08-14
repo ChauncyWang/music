@@ -1,3 +1,4 @@
+import json
 import sqlite3
 import threading
 
@@ -57,3 +58,39 @@ def dict_adapter(dic, *args):
 
 def load_db_config():
     sqlite3.connect()
+
+
+def load_config():
+    file = open('config.json', 'r').read()
+    config = json.loads(file)
+    return config
+
+
+def save_config(config):
+    file = open('config.json', 'w')
+    file.write(json.dumps(config))
+
+
+class Configuration:
+    config = None
+
+    @staticmethod
+    def get(*args):
+        default = args[0]
+        result = Configuration.config.get(args[1])
+        try:
+            for arg in args[2:]:
+                result = result.get(arg)
+            return result
+        except Exception:
+            return default
+
+    @staticmethod
+    def load_config():
+        file = open('config.json', 'r').read()
+        Configuration.config = json.loads(file)
+
+    @staticmethod
+    def save_config():
+        file = open('config.json', 'w')
+        file.write(json.dumps(Configuration.config))
