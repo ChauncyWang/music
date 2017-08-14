@@ -1,5 +1,5 @@
 from exception_handle import exception, QParseException
-from modles import *
+from models import *
 from qq import QQ
 
 

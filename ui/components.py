@@ -8,7 +8,7 @@ from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QMediaPlaylist
 from PyQt5.QtWidgets import QLabel, QApplication, QLineEdit, QFrame, QMainWindow, QTableWidget, QTableWidgetItem, \
     QAbstractItemView, QComboBox, QSlider, QGraphicsDropShadowEffect
 
-from modles import *
+from models import *
 from netease.models import *
 from ui.config import *
 from core import *

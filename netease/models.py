@@ -1,4 +1,4 @@
-from modles import Song, Album, Artist, Quality, Artists, Songs
+from models import Song, Album, Artist, Quality, Artists, Songs
 from exception_handle import exception, NParseException
 from netease import NETEASE
 from util import dict_adapter
