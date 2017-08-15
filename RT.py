@@ -4,11 +4,13 @@ from ui.components import *
 from ui import resource
 import logging
 import requests
+
 logging.getLogger("requests").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s', )
+
 
 def test():
     a = NeteaseAPI().search_songs('S.H.E')
@@ -42,6 +44,7 @@ def testcore():
     a = core.search("薛之谦", 0, 20)
     print(a)
 
+
 def test_media():
     app = QApplication(sys.argv)
     player = QMediaPlayer()
@@ -50,6 +53,11 @@ def test_media():
     print(player.state())
     sys.exit(app.exec_())
 
-# test_media()
-for i in range(0, 1000):
-    print(i, Random().randint(0, 9))
+
+def xy(x, y):
+    x.append(1)
+    y.append(2)
+
+y, z = [1], [2]
+xy(y, z)
+print(y, z)

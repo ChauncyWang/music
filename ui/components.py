@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import QLabel, QApplication, QLineEdit, QFrame, QMainWindow
 
 from models import *
 from netease.models import *
+from ui import awesome
 from ui.config import *
 from core import *
 from util import Configuration
@@ -27,12 +28,11 @@ class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
         super(QMainWindow, self).__init__(parent)
-        QFontDatabase.addApplicationFont(os.path.dirname(__file__) + '/res/font/fontawesome-webfont.ttf')
         self.music = Core()
 
         self.play_bar = PlayBar(self.music, self)
         self.title = TitleBar(self)
-        self.left_frame = QFrame(self)
+        self.left_frame = SongListsFrame.ItemFrame(self)
         self.main_frame = SearchTable(self.music, self)
         self.main_frame.update_model()
         self.init()
@@ -41,11 +41,11 @@ class MainWindow(QMainWindow):
     def init(self):
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setFixedSize(800, 600)
-        self.title.setGeometry(200, 0, 600, 40)
+        self.title.setGeometry(160, 0, 640, 40)
         self.title.setObjectName("title_bar")
-        self.left_frame.setGeometry(0, 0, 200, 540)
+        self.left_frame.setGeometry(0, 0, 160, 540)
         self.left_frame.setObjectName("left_frame")
-        self.main_frame.setGeometry(200, 40, 600, 500)
+        self.main_frame.setGeometry(160, 40, 640, 500)
         self.main_frame.setObjectName("main_frame")
         self.play_bar.setGeometry(0, 540, 800, 60)
         self.play_bar.setObjectName("play_bar")
@@ -878,3 +878,93 @@ class FromFrame(QFrame):
         else:
             self.netease.hide()
             self.qqmusic.hide()
+
+
+class Player:
+    def __init__(self):
+        self.song_list = SongList()
+
+
+class SongListsFrame(QFrame):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.title = ClickableLabel(self)
+        self.icon_add = ClickableLabel(self)
+        self.icon_fold = ClickableLabel(self)
+        self.frame_items = SongListsFrame.ItemListFrame(self)
+        self.folded = True
+        self.init_components()
+        self.signal_slot()
+
+    def init_components(self):
+        label_qss = """
+            QLabel{font: %dpt;color:#AAAAAA;}QLabel:hover{color:#FFFFFF;}
+        """
+        self.icon_add.setStyleSheet(label_qss % 12)
+        self.icon_add.setText('\uE083')
+        self.icon_add.setAlignment(Qt.AlignCenter)
+        self.icon_fold.setStyleSheet(label_qss % 14)
+
+        self.frame_items.add_item("1")
+        self.frame_items.add_item("2")
+        self.frame_items.add_item("3")
+        self.frame_items.add_item("4")
+
+    def signal_slot(self):
+        self.icon_fold.clicked.connect(self.folded_update)
+        self.icon_add.clicked.connect(self.add_item)
+
+    def folded_update(self):
+        self.folded = not self.folded
+        self.update()
+
+    def add_item(self):
+        self.folded = False
+        self.update()
+        pass
+
+    def paintEvent(self, event):
+        w = self.width()
+        self.icon_add.setGeometry(w - 50, 0, 25, 25)
+        self.icon_fold.setGeometry(w - 25, 0, 25, 25)
+        if self.folded:
+            self.icon_fold.setText(awesome.icon_angle_up)
+            self.frame_items.setGeometry(0, 25, self.frame_items.width(), self.frame_items.height())
+            self.setFixedSize(160, self.frame_items.height() + 25)
+        else:
+            self.icon_fold.setText(awesome.icon_angle_down)
+            self.setFixedSize(160, 25)
+
+    class ItemFrame(QFrame):
+        """ 列表项 """
+
+        def __init__(self, parent=None, icon=awesome.icon_music):
+            super().__init__(parent)
+            self.setStyleSheet("ItemFrame:hover{background-color:#40FFFFFF;margin: 2px 10px 2px 4px;padding-left:10px;}"
+                               "ItemFrame {margin: 2px 10px 2px 4px;padding-left:10px;}")
+            self.setFixedSize(160, 25)
+            self.icon = QLabel(self)
+            self.icon.setStyleSheet("font: 12pt 'FontAwesome';color:#FFFFFF;")
+            self.icon.setAlignment(Qt.AlignCenter)
+            self.icon.setGeometry(20, 0, 25, 25)
+            self.icon.setText(icon)
+            self.label = QLabel(self)
+            self.label.setStyleSheet('font: 8pt;color:#FFFFFF')
+            self.label.setAlignment(Qt.AlignVCenter)
+            self.label.setGeometry(50, 0, 110, 25)
+
+    class ItemListFrame(QFrame):
+        """ 列表项(点击箭头显示出来的部分) """
+
+        def __init__(self, parent):
+            super().__init__(parent)
+            self.items = []
+
+        def add_item(self, item):
+            """ 添加列表项目 """
+            frame = SongListsFrame.ItemFrame(self)
+            frame.label.setText(item)
+            self.items.insert(0, frame)
+            for i in range(0, len(self.items)):
+                self.items[i].setGeometry(0, i * 25, 160, 25)
+            self.setFixedSize(160, 25 * len(self.items))

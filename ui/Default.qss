@@ -1,6 +1,9 @@
-#main_window {
+#main_window{
     border-image: url(:/jpg/bg1);
     color: red;
+}
+QMainWindow {
+    border-image: url(:/jpg/bg1);
 }
 
 #title_bar {
@@ -8,7 +11,7 @@
 }
 
 #play_bar {
-    background-color: #80000000;
+    background-color: #CC000000;
 }
 
 #left_frame {

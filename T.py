@@ -2,11 +2,11 @@ import logging
 import os
 import sys
 
+from PyQt5.QtGui import QFontDatabase
 from PyQt5.QtWidgets import QApplication
 
-from ui.components import MainWindow
+from ui.components import *
 from ui import resource
-from util import load_config
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
@@ -16,9 +16,16 @@ app = QApplication(sys.argv)
 # play = PlayBar()
 # play.show()
 # play.set_song(a.search_songs("告白气球", 0, 1)[0])
-a = MainWindow()
-load_config()
-a.show()
+
+font_file = os.path.dirname(__file__) + '/ui/res/font/fontawesome-webfont.ttf'
+if QFontDatabase.addApplicationFont(font_file) == -1:
+    logging.warning("字体加载失败,有部分图标将无法显示!")
+else:
+    logging.info("字体文件加载成功!")
+
+main = QMainWindow()
+a = SongListsFrame(main)
 qss = open(os.path.dirname(__file__) + "/ui/Default.qss", 'r').read()
 app.setStyleSheet(qss)
+main.show()
 sys.exit(app.exec_())

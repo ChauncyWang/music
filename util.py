@@ -56,21 +56,6 @@ def dict_adapter(dic, *args):
     return result
 
 
-def load_db_config():
-    sqlite3.connect()
-
-
-def load_config():
-    file = open('config.json', 'r').read()
-    config = json.loads(file)
-    return config
-
-
-def save_config(config):
-    file = open('config.json', 'w')
-    file.write(json.dumps(config))
-
-
 class Configuration:
     config = None
 
