@@ -6,7 +6,7 @@ from PyQt5.QtGui import QPainter, QColor, QFontDatabase, QFont, QPixmap, QPalett
     QFontMetrics
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QMediaPlaylist
 from PyQt5.QtWidgets import QLabel, QApplication, QLineEdit, QFrame, QMainWindow, QTableWidget, QTableWidgetItem, \
-    QAbstractItemView, QComboBox, QSlider, QGraphicsDropShadowEffect
+    QAbstractItemView, QComboBox, QSlider, QGraphicsDropShadowEffect, QTextEdit, QScrollArea
 
 from models import *
 from netease.models import *
@@ -32,9 +32,10 @@ class MainWindow(QMainWindow):
 
         self.play_bar = PlayBar(self.music, self)
         self.title = TitleBar(self)
-        self.left_frame = SongListsFrame.ItemFrame(self)
+        self.left_frame = SongListBar(self)
         self.main_frame = SearchTable(self.music, self)
         self.main_frame.update_model()
+        self.scroll = QScrollArea(self)
         self.init()
         self.signal_slot()
 
@@ -50,6 +51,10 @@ class MainWindow(QMainWindow):
         self.play_bar.setGeometry(0, 540, 800, 60)
         self.play_bar.setObjectName("play_bar")
         self.setObjectName("main_window")
+        self.scroll.setGeometry(0, 0, 160, 540)
+        self.scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scroll.setStyleSheet('background-color:#00000000;')
+        self.scroll.setWidget(self.left_frame)
 
     def signal_slot(self):
         self.title.search_icon.clicked.connect(self.search_song)
@@ -892,6 +897,7 @@ class SongListsFrame(QFrame):
         self.icon_add = ClickableLabel(self)
         self.icon_fold = ClickableLabel(self)
         self.frame_items = SongListsFrame.ItemListFrame(self)
+        self.edit_name = QLineEdit(self)
         self.folded = True
         self.init_components()
         self.signal_slot()
@@ -904,11 +910,13 @@ class SongListsFrame(QFrame):
         self.icon_add.setText('\uE083')
         self.icon_add.setAlignment(Qt.AlignCenter)
         self.icon_fold.setStyleSheet(label_qss % 14)
-
-        self.frame_items.add_item("1")
-        self.frame_items.add_item("2")
-        self.frame_items.add_item("3")
-        self.frame_items.add_item("4")
+        self.title.setStyleSheet(label_qss % 10)
+        self.title.setGeometry(10, 0, 100, 25)
+        self.title.setAlignment(Qt.AlignCenter)
+        self.title.setText("我创建的歌单")
+        self.edit_name.setGeometry(10, 27, 100, 21)
+        self.edit_name.hide()
+        self.frame_items.setGeometry(0, 25, 0, 0)
 
     def signal_slot(self):
         self.icon_fold.clicked.connect(self.folded_update)
@@ -920,17 +928,28 @@ class SongListsFrame(QFrame):
 
     def add_item(self):
         self.folded = False
+        self.edit_name.show()
+        self.frame_items.setGeometry(0, 50, self.frame_items.width(), self.frame_items.height())
         self.update()
-        pass
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Return:
+            text = self.edit_name.text()
+            if text == "" or text is None:
+                text = "未命名歌单"
+
+            self.frame_items.add_item(text)
+            self.frame_items.setGeometry(0, 25, self.frame_items.width(), self.frame_items.height())
+            self.edit_name.hide()
+            self.update()
 
     def paintEvent(self, event):
         w = self.width()
         self.icon_add.setGeometry(w - 50, 0, 25, 25)
         self.icon_fold.setGeometry(w - 25, 0, 25, 25)
-        if self.folded:
+        if not self.folded:
             self.icon_fold.setText(awesome.icon_angle_up)
-            self.frame_items.setGeometry(0, 25, self.frame_items.width(), self.frame_items.height())
-            self.setFixedSize(160, self.frame_items.height() + 25)
+            self.setFixedSize(160, self.frame_items.height() + self.frame_items.pos().y())
         else:
             self.icon_fold.setText(awesome.icon_angle_down)
             self.setFixedSize(160, 25)
@@ -938,7 +957,7 @@ class SongListsFrame(QFrame):
     class ItemFrame(QFrame):
         """ 列表项 """
 
-        def __init__(self, parent=None, icon=awesome.icon_music):
+        def __init__(self, parent=None, text="未命名歌单", icon=awesome.icon_music):
             super().__init__(parent)
             self.setStyleSheet("ItemFrame:hover{background-color:#40FFFFFF;margin: 2px 10px 2px 4px;padding-left:10px;}"
                                "ItemFrame {margin: 2px 10px 2px 4px;padding-left:10px;}")
@@ -952,6 +971,7 @@ class SongListsFrame(QFrame):
             self.label.setStyleSheet('font: 8pt;color:#FFFFFF')
             self.label.setAlignment(Qt.AlignVCenter)
             self.label.setGeometry(50, 0, 110, 25)
+            self.label.setText(text)
 
     class ItemListFrame(QFrame):
         """ 列表项(点击箭头显示出来的部分) """
@@ -960,11 +980,27 @@ class SongListsFrame(QFrame):
             super().__init__(parent)
             self.items = []
 
-        def add_item(self, item):
+        def add_item(self, item, icon=awesome.icon_music):
             """ 添加列表项目 """
-            frame = SongListsFrame.ItemFrame(self)
+            frame = SongListsFrame.ItemFrame(self, icon)
             frame.label.setText(item)
+            frame.show()
             self.items.insert(0, frame)
             for i in range(0, len(self.items)):
                 self.items[i].setGeometry(0, i * 25, 160, 25)
             self.setFixedSize(160, 25 * len(self.items))
+            self.update()
+
+
+class SongListBar(QFrame):
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.likes = SongListsFrame.ItemFrame(self, "我喜欢", awesome.icon_heart)
+        self.likes.setGeometry(0, 200, 160, 25)
+        self.likes = SongListsFrame.ItemFrame(self, "播放历史", awesome.icon_time)
+        self.likes.setGeometry(0, 225, 160, 25)
+        self.lists = SongListsFrame(self)
+        self.lists.setGeometry(0, 250, 160, 25)
+
+    def paintEvent(self, event):
+        self.setFixedSize(160, self.lists.height() + self.lists.pos().y())

@@ -23,8 +23,7 @@ if QFontDatabase.addApplicationFont(font_file) == -1:
 else:
     logging.info("字体文件加载成功!")
 
-main = QMainWindow()
-a = SongListsFrame(main)
+main = MainWindow()
 qss = open(os.path.dirname(__file__) + "/ui/Default.qss", 'r').read()
 app.setStyleSheet(qss)
 main.show()

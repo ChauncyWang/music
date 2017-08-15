@@ -15,7 +15,7 @@ QMainWindow {
 }
 
 #left_frame {
-    background-color: #80FFFFFF;
+    background-color: #00000000;
 }
 
 #cur_time, #total_time, #song_info {
