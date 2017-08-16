@@ -30,13 +30,11 @@ class AwesomeLabel(ClickableLabel):
     """
     使用 awesome 图标字体的标签
     """
-    font = QFont('fontawesome')
 
     def __init__(self, parent, obj_name, text, size):
         super(ClickableLabel, self).__init__(parent)
         self.setObjectName(obj_name)
-        AwesomeLabel.font.setPixelSize(size)
-        self.setFont(AwesomeLabel.font)
+        self.setStyleSheet("font: %dpx 'FontAwesome';color:#FFFFFF;" % size)
         self.setAlignment(Qt.AlignCenter)
         self.setText(text)
 

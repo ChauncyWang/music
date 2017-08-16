@@ -35,7 +35,7 @@ SearchTable {
     color: #00FF80;
 }
 
-#btn_pre_song, #play_pause, #btn_next_song {
+#btn_pre_song, #play_pause, #btn_next_song, #play_play{
     color: #00aaaf;
     border: 2px outset beige;
     border-radius: 20px;

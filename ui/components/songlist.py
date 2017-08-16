@@ -18,7 +18,7 @@ class SongListsFrame(QFrame):
 
     def init_components(self):
         label_qss = """
-            QLabel{font: %dpt;color:#AAAAAA;}QLabel:hover{color:#FFFFFF;}
+            QLabel{font: %dpx;color:#AAAAAA;}QLabel:hover{color:#FFFFFF;}
         """
         self.icon_add.setStyleSheet(label_qss % 12)
         self.icon_add.setText('\uE083')
@@ -27,6 +27,7 @@ class SongListsFrame(QFrame):
         self.title.setStyleSheet(label_qss % 10)
         self.title.setGeometry(10, 0, 100, 25)
         self.title.setAlignment(Qt.AlignCenter)
+        self.title.setStyleSheet(label_qss % 14)
         self.title.setText("我创建的歌单")
         self.edit_name.setGeometry(10, 27, 100, 21)
         self.edit_name.hide()
@@ -80,12 +81,12 @@ class SongListsFrame(QFrame):
                                "ItemFrame {margin: 2px 10px 2px 4px;padding-left:10px;}")
             self.setFixedSize(160, 25)
             self.icon = QLabel(self)
-            self.icon.setStyleSheet("font: 12pt 'FontAwesome';color:#FFFFFF;")
+            self.icon.setStyleSheet("font: 14px 'FontAwesome';color:#FFFFFF;")
             self.icon.setAlignment(Qt.AlignCenter)
             self.icon.setGeometry(20, 0, 25, 25)
             self.icon.setText(icon)
             self.label = QLabel(self)
-            self.label.setStyleSheet('font: 8pt;color:#FFFFFF')
+            self.label.setStyleSheet('font: 12px;color:#FFFFFF')
             self.label.setAlignment(Qt.AlignVCenter)
             self.label.setGeometry(50, 0, 110, 25)
             self.label.setText(text)

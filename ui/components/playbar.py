@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import *
 
 from core import download_img, SONG, download_mp3
 from models import Song
+from ui.awesome import *
 from ui.components.base_component import *
 from ui.components.lyric import Lyric
 from ui.config import *
@@ -156,12 +157,16 @@ class PlayButton(ClickableLabel):
     PAUSE = 2
     PRE = 3
     NEXT = 4
-    texts = {PLAY: '\uf04b', PAUSE: '\uf04c', PRE: '\uf048', NEXT: '\uf051', }
+    texts = {PLAY: icon_play, PAUSE: icon_pause, PRE: icon_step_backward, NEXT: icon_step_forward, }
 
     @staticmethod
     def new_label(kind, parent, size):
         if kind == PlayButton.PLAY:
-            label = PlayButton(size, parent, size // 20)
+            # label = PlayButton(size, parent, size // 20)
+            label = ClickableLabel(parent)
+            label.setStyleSheet("font: 14px 'FontAwesome';color:#FFFFFF;")
+            label.setObjectName("play_play")
+            label.setText(icon_play)
         else:
             label = PlayButton(size, parent)
         label.setText(PlayButton.texts[kind])

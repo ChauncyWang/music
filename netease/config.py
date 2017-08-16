@@ -24,13 +24,3 @@ header = {
     "Connection": "keep-alive",
     "Cache-Control": "max-age=0",
 }
-r = os.environ['HOME']
-root_path = '%s/ChavaMusic/' % r
-cookie_path = root_path + 'cookie'
-cache_path = root_path + 'cache/'
-
-if not os.path.exists(root_path):
-    os.mkdir(root_path)
-
-if not os.path.exists(cache_path):
-    os.mkdir(cache_path)

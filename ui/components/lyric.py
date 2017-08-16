@@ -8,9 +8,10 @@ from util import Configuration
 
 class Lyric(QFrame):
     def __init__(self, parent=None):
-        super(QFrame, self).__init__(parent)
+        super().__init__(parent)
         self.lyric = QLabel(self)
         self.lyric2 = QLabel(self)
+        self.size_grip = QSizeGrip(self)
         self.single_line = True
         self.lock = False
         self.enter = False
@@ -31,7 +32,7 @@ class Lyric(QFrame):
         self.single_line = Configuration.get(False, 'ui', 'lyric', 'single')
         self.setGeometry(x, y, w, h)
         self.setObjectName('lyric_bar')
-        self.setWindowFlags(Qt.SubWindow | Qt.Popup | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
+        self.setWindowFlags(Qt.SubWindow | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
         self.setMouseTracking(True)
         self.lyric.setObjectName('lyric')
@@ -108,6 +109,12 @@ class Lyric(QFrame):
                 painter.drawRoundedRect(self.rect(), 10, 10)
                 painter.drawRoundedRect(3, 3, self.width() - 6, self.height() - 6, 8, 8)
 
+        sgw = self.size_grip.width()
+        sgh = self.size_grip.height()
+        sw = self.width()
+        sh = self.height()
+        self.size_grip.setGeometry(sw - sgw - 6, sh - sgh - 6, sgw, sgh)
+
         Configuration.config['ui']['lyric']['x'] = self.pos().x()
         Configuration.config['ui']['lyric']['y'] = self.pos().y()
         Configuration.config['ui']['lyric']['w'] = self.width()
@@ -144,5 +151,3 @@ class Lyric(QFrame):
         if event.key() == Qt.Key_Space:
             self.single_line = not self.single_line
         self.update()
-
-

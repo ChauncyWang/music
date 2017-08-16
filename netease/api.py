@@ -5,6 +5,7 @@ import re
 import requests
 
 from api import BaseAPI
+from config import *
 from netease.models import *
 from netease.config import *
 from netease.util import encrypted_request
