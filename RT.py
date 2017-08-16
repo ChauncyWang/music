@@ -1,63 +1,26 @@
-import sys
+import math
+import threading
+from random import Random
 
-from ui.components import *
-from ui import resource
-import logging
-import requests
-
-logging.getLogger("requests").setLevel(logging.WARNING)
-logging.getLogger("urllib3").setLevel(logging.WARNING)
-
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s', )
+import os
+from moviepy.editor import *
 
 
-def test():
-    a = NeteaseAPI().search_songs('S.H.E')
-    for t in a:
-        print(t)
+def cut(file):
+    video = VideoFileClip(file)
+    length = math.floor(video.duration)
+    for i in range(0, 10):
+        begin = Random().randint(0, length - 10)
+        clip = video.subclip(begin, begin + 10)
+        result = CompositeVideoClip([clip, ])
+        if not os.path.exists(file[:-4]):
+            os.mkdir(file[:-4])
+        result.write_videofile("%s/%d-%d.mp4" % (file[:-4], i, begin), codec="libx264", bitrate="5000k")
 
 
-def test1():
-    s = NeteaseAPI()
-    a = s.get_toplist()
-    print(a[0]['toplist'][0]['name'])
-    s.get_toplist_songs(a[0]['toplist'][0]['id'])
+def files(path):
+    return os.listdir(path)
 
-
-def test2():
-    s = QQMusicAPI()
-    a = s.search_song('告白气球', 0, 1)
-    for t in a:
-        s.get_lyric(t.id, t.mid)
-
-
-def test_time_label():
-    app = QApplication(sys.argv)
-    a = FromFrame(f=3)
-    a.show()
-    sys.exit(app.exec_())
-
-
-def testcore():
-    core = Core()
-    a = core.search("薛之谦", 0, 20)
-    print(a)
-
-
-def test_media():
-    app = QApplication(sys.argv)
-    player = QMediaPlayer()
-    player.setMedia(QMediaContent(QUrl.fromLocalFile('D:\\ChavaMusic\\cache\\mp3\\我们的歌谣True.m4a')))
-    player.play()
-    print(player.state())
-    sys.exit(app.exec_())
-
-
-def xy(x, y):
-    x.append(1)
-    y.append(2)
-
-y, z = [1], [2]
-xy(y, z)
-print(y, z)
+path = "/home/hy/文档/录像晋彬"
+for file in files(path):
+    cut('%s/%s' % (path, file))
