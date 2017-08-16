@@ -5,8 +5,8 @@ import sys
 from PyQt5.QtGui import QFontDatabase
 from PyQt5.QtWidgets import QApplication
 
-from ui.components import *
 from ui import resource
+from ui.components.mainwindow import MainWindow
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)

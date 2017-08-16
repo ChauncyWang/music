@@ -2,9 +2,6 @@
     border-image: url(:/jpg/bg1);
     color: red;
 }
-QMainWindow {
-    border-image: url(:/jpg/bg1);
-}
 
 #title_bar {
     background-color: #8080FFFF;
@@ -27,7 +24,7 @@ QMainWindow {
 }
 
 SearchTable {
-    background-color: #a0ffffff;
+    background-color: #30000000;
 }
 
 #lyric {

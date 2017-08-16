@@ -72,10 +72,10 @@ class Configuration:
 
     @staticmethod
     def load_config():
-        file = open('config.json', 'r').read()
+        file = open('appdata.json', 'r').read()
         Configuration.config = json.loads(file)
 
     @staticmethod
     def save_config():
-        file = open('config.json', 'w')
+        file = open('appdata.json', 'w')
         file.write(json.dumps(Configuration.config))
