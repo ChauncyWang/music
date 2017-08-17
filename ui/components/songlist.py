@@ -18,10 +18,10 @@ class SongListsFrame(QFrame):
 
     def init_components(self):
         label_qss = """
-            QLabel{font: %dpx;color:#AAAAAA;}QLabel:hover{color:#FFFFFF;}
+            QLabel{font: %dpx 'FontAwesome';color:#AAAAAA;}QLabel:hover{color:#FFFFFF;}
         """
-        self.icon_add.setStyleSheet(label_qss % 12)
-        self.icon_add.setText('\uE083')
+        self.icon_add.setStyleSheet(label_qss % 20)
+        self.icon_add.setText('+')
         self.icon_add.setAlignment(Qt.AlignCenter)
         self.icon_fold.setStyleSheet(label_qss % 14)
         self.title.setStyleSheet(label_qss % 10)
@@ -86,7 +86,7 @@ class SongListsFrame(QFrame):
             self.icon.setGeometry(20, 0, 25, 25)
             self.icon.setText(icon)
             self.label = QLabel(self)
-            self.label.setStyleSheet('font: 12px;color:#FFFFFF')
+            self.label.setStyleSheet("font: 12px 'FontAwesome';color:#FFFFFF;")
             self.label.setAlignment(Qt.AlignVCenter)
             self.label.setGeometry(50, 0, 110, 25)
             self.label.setText(text)

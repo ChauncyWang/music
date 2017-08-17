@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import *
 
 from core import download_img, SONG, download_mp3
 from models import Song
+from ui import awesome
 from ui.awesome import *
 from ui.components.base_component import *
 from ui.components.lyric import Lyric
@@ -150,8 +151,6 @@ class PlayBar(QFrame):
             self.play_pause()
 
 
-
-
 class PlayButton(ClickableLabel):
     PLAY = 1
     PAUSE = 2
@@ -162,20 +161,15 @@ class PlayButton(ClickableLabel):
     @staticmethod
     def new_label(kind, parent, size):
         if kind == PlayButton.PLAY:
-            # label = PlayButton(size, parent, size // 20)
-            label = ClickableLabel(parent)
-            label.setStyleSheet("font: 14px 'FontAwesome';color:#FFFFFF;")
-            label.setObjectName("play_play")
-            label.setText(icon_play)
+            label = PlayButton(size, parent, icon_play, size // 20)
         else:
-            label = PlayButton(size, parent)
-        label.setText(PlayButton.texts[kind])
+            label = PlayButton(size, parent, PlayButton.texts[kind])
         return label
 
-    def __init__(self, size, parent=None, offset=0):
-        super().__init__(parent)
-        style = """
-        color:#%s;border: 2px solid #%s;border-radius:%dpx;padding-left:%dpx
+    def __init__(self, size, parent=None, text=None, offset=0):
+        super().__init__(parent, text)
+        style = """font: 14px 'FontAwesome';color:#FFFFFF;color:#%s;
+        border: 2px solid #%s;border-radius:%dpx;padding-left:%dpx
         """ % (theme_color, theme_color, size / 2, offset)
         self.size = size
         self.offset = offset
@@ -249,7 +243,7 @@ class PlayButtonGroup(QFrame):
         self.signal_next.emit()
 
 
-class VolumeButton(AwesomeLabel):
+class VolumeButton(ClickableLabel):
     """
     声音控制组件
     自身(self)点击(clicked)时，计算弹窗的位置并显示
@@ -258,30 +252,26 @@ class VolumeButton(AwesomeLabel):
     signal_volume_changed = pyqtSignal(int)
 
     def __init__(self, parent=None):
-        super().__init__(parent, 'volume_btn', '\uf027', 30)
+        super().__init__(parent, icon_volume_down)
         self.muted = False
 
         self.pop_volume = PopFrame()
         self.sli_volume = QSlider(self.pop_volume)
-        self.cl_volume = AwesomeLabel(self.pop_volume, 'cl_volume', '\uf027', 20)
+        self.cl_volume = ClickableLabel(self.pop_volume, icon_volume_down)
+        self.cl_volume.setStyleSheet(awesome_qss % 20)
 
         self.init_components()
         self.signal_slot()
 
     def init_components(self):
-        style = """
-            #btn_volume {color:#FFFFFF;}
-            #btn_volume:hover {color:#%s;}
-        """ % theme_color
         x = 30
         self.setFixedSize(x, x)
-        self.setObjectName('btn_volume')
+        self.setStyleSheet("VolumeButton{%s}VolumeButton:hover{color:#%s;}" % (awesome_qss % 30, theme_color))
+        self.setAlignment(Qt.AlignCenter)
         self.sli_volume.setGeometry(self.width() / 2 - 10, 10, 20, 60)
         self.sli_volume.setOrientation(Qt.Vertical)
-        self.sli_volume.setObjectName('sli_volume')
         self.cl_volume.setGeometry(self.width() / 2 - 10, 72, 20, 20)
-        self.cl_volume.setObjectName('cl_volume')
-        self.setStyleSheet(style)
+        self.cl_volume.setAlignment(Qt.AlignCenter)
 
     def signal_slot(self):
         self.clicked.connect(self.slot_calc_pos)

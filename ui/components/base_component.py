@@ -1,7 +1,8 @@
 import logging
 
+import os
 from PyQt5.QtCore import Qt, pyqtSignal, QRect
-from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush, QColor, QFont
+from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush, QColor, QFont, QFontDatabase
 from PyQt5.QtWidgets import QFrame, QLabel, QSlider
 
 from models import Song
@@ -18,25 +19,12 @@ class ClickableLabel(QLabel):
     clicked = pyqtSignal()
     send = pyqtSignal(str)
 
-    def __init__(self, parent=None):
-        super(QLabel, self).__init__(parent)
+    def __init__(self, parent=None, text=None):
+        super(QLabel, self).__init__(parent, text=text)
 
     def mousePressEvent(self, event):
         self.clicked.emit()
         self.send.emit(self.objectName())
-
-
-class AwesomeLabel(ClickableLabel):
-    """
-    使用 awesome 图标字体的标签
-    """
-
-    def __init__(self, parent, obj_name, text, size):
-        super(ClickableLabel, self).__init__(parent)
-        self.setObjectName(obj_name)
-        self.setStyleSheet("font: %dpx 'FontAwesome';color:#FFFFFF;" % size)
-        self.setAlignment(Qt.AlignCenter)
-        self.setText(text)
 
 
 class PopFrame(QFrame):
