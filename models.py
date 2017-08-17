@@ -16,7 +16,7 @@ class Song:
 
     def __str__(self):
         m = self.dt // 1000 // 60
-        s = self.dt // 1000 - 60 * m
+        s = self.dt // 1000 % 60
         return "[(歌曲:%s)(歌手:%s)(专辑:%s)(时间:%02d:%02d)]" % (self.name, self.artists, self.album, m, s)
 
     def __eq__(self, other):

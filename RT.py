@@ -1,26 +1,34 @@
-import math
-import threading
-from random import Random
 
+import logging
 import os
-from moviepy.editor import *
+import sys
 
+from PyQt5.QtCore import Qt, QCoreApplication
+from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
-def cut(file):
-    video = VideoFileClip(file)
-    length = math.floor(video.duration)
-    for i in range(0, 10):
-        begin = Random().randint(0, length - 10)
-        clip = video.subclip(begin, begin + 10)
-        result = CompositeVideoClip([clip, ])
-        if not os.path.exists(file[:-4]):
-            os.mkdir(file[:-4])
-        result.write_videofile("%s/%d-%d.mp4" % (file[:-4], i, begin), codec="libx264", bitrate="5000k")
+from models import Song
+from ui import resource
+from ui.components.mainwindow import MainWindow
+from ui.components.songtable import SongTableItem
 
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
 
-def files(path):
-    return os.listdir(path)
-
-path = "/home/hy/文档/录像晋彬"
-for file in files(path):
-    cut('%s/%s' % (path, file))
+QCoreApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
+app = QApplication(sys.argv)
+font_file = os.path.dirname(__file__) + '/ui/res/font/fontawesome-webfont.ttf'
+if QFontDatabase.addApplicationFont(font_file) == -1:
+    logging.warning("字体加载失败,有部分图标将无法显示!")
+else:
+    logging.info("字体文件加载成功!")
+main = QMainWindow()
+main.setStyleSheet("QMainWindow{background-color:#660099;}")
+song = Song()
+song.name = "gaobaiqiqiu"
+song.artists = "人"
+song.album = "专辑"
+song.dt = 2000000
+a = SongTableItem(main, song)
+main.show()
+sys.exit(app.exec_())

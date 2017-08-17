@@ -14,11 +14,12 @@ class TitleBar(QFrame):
         self.search_icon = ClickableLabel(self, text=icon_search)
         self.input = QLineEdit(self)
         self.min_icon = ClickableLabel(self, text=icon_chevron_down)
-        self.min_icon.setStyleSheet(awesome_qss % 20)
+        qss = awesome_qss % (20,"80FFFFFF")
+        self.min_icon.setStyleSheet(qss)
         self.max_icon =  ClickableLabel(self, text=icon_chevron_up)
-        self.max_icon.setStyleSheet(awesome_qss % 20)
+        self.max_icon.setStyleSheet(qss)
         self.close_icon = ClickableLabel(self, text=icon_remove)
-        self.close_icon.setStyleSheet(awesome_qss % 20)
+        self.close_icon.setStyleSheet(qss)
         self.mouse_press_pos = None
         self.init()
         self.signal_slot()
@@ -28,7 +29,7 @@ class TitleBar(QFrame):
         self.input.setStyleSheet("color:#FFFFFF;border:2px solid;border-radius:15px;"
                                  "background-color:#80808080;padding-left:10px;")
         self.search_icon.setGeometry(180, 5, 30, 30)
-        self.search_icon.setStyleSheet(awesome_qss % 20)
+        self.search_icon.setStyleSheet(awesome_qss % (20,"80FFFFFF"))
 
     def paintEvent(self, event):
         self.min_icon.setGeometry(self.width() - 90, 10, 30, 20)

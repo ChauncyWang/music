@@ -245,4 +245,4 @@ icon_spinner = "\uf110"
 icon_circle = "\uf111"
 icon_reply = "\uf112"
 
-awesome_qss = "font: %dpx 'FontAwesome'; color:#FFFFFF;"
+awesome_qss = "font: %dpx 'FontAwesome'; color:#%s;"

@@ -258,7 +258,7 @@ class VolumeButton(ClickableLabel):
         self.pop_volume = PopFrame()
         self.sli_volume = QSlider(self.pop_volume)
         self.cl_volume = ClickableLabel(self.pop_volume, icon_volume_down)
-        self.cl_volume.setStyleSheet(awesome_qss % 20)
+        self.cl_volume.setStyleSheet(awesome_qss % (20,"80FFFFFF"))
 
         self.init_components()
         self.signal_slot()
@@ -266,7 +266,7 @@ class VolumeButton(ClickableLabel):
     def init_components(self):
         x = 30
         self.setFixedSize(x, x)
-        self.setStyleSheet("VolumeButton{%s}VolumeButton:hover{color:#%s;}" % (awesome_qss % 30, theme_color))
+        self.setStyleSheet("VolumeButton{%s}VolumeButton:hover{color:#%s;}" % (awesome_qss % (30,"80FFFFFF"), theme_color))
         self.setAlignment(Qt.AlignCenter)
         self.sli_volume.setGeometry(self.width() / 2 - 10, 10, 20, 60)
         self.sli_volume.setOrientation(Qt.Vertical)

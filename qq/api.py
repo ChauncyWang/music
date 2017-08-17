@@ -49,6 +49,24 @@ class QQMusicAPI(BaseAPI):
         :return:请求结果
         """
         params = {
+            'ct': '24',
+            'qqmusic_ver': '1298',
+            'remoteplace': 'txt.yqq.song',
+            'searchid': '68035876895322363',
+            'aggr': '1',
+            'catZhida': '1',
+            'lossless': '0',
+            'flag_qc': '0',
+            'g_tk': '5381',
+            'jsonpCallback': 'searchCallbacksong593',
+            'loginUin': '0',
+            'hostUin': '0',
+            'format': 'jsonp',
+            'inCharset': 'utf8',
+            'outCharset': 'utf - 8',
+            'notice': '0',
+            'platform': 'yqq',
+            'needNewCode': '0',
             't': t,
             'p': page,
             'n': num,
@@ -75,6 +93,7 @@ class QQMusicAPI(BaseAPI):
     def get_key(self, mid, file):
         params = {
             'g_tk': '5381',
+            'json': '3',
             'format': 'json',
             'inCharset': 'utf8',
             'outCharset': 'utf8',
@@ -164,7 +183,10 @@ class QQMusicAPI(BaseAPI):
             "8": "应版权方要求不能免费播放，如果是绿钻就没问题啦",
             "9": "应版权方要求购买后才能收听和下载哦，要不任性去音乐馆-专栏购买下"
         }
-        if song.action != 0:
+        if song.action == 0:
+            return True
+        else:
             logging.warning("%s:%s" % (str(song), msginfo[str(song.action)]))
+            if song.action in [14]:
+                return True
             return False
-        return True

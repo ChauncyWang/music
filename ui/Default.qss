@@ -41,7 +41,6 @@ SearchTable {
     border-radius: 20px;
 
 }
-
 QComboBox {
     border-radius: 4px;
     border: 1px solid #00aaaf;
