@@ -1,6 +1,7 @@
 from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import *
 
+from core import music_core
 from models import Song
 from ui.components.base_component import FromFrame
 
@@ -8,12 +9,11 @@ from ui.components.base_component import FromFrame
 class SearchTable(QTableWidget):
     play_song = pyqtSignal(Song, bool)
 
-    def __init__(self, core, parent=None):
+    def __init__(self, parent=None):
         super(QTableWidget, self).__init__(parent)
         self.songs = []
         self.verticalHeader().setVisible(False)
         self.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.music = core
         self.setStyleSheet("""
             QScrollBar {
                 background:write;
@@ -54,7 +54,7 @@ class SearchTable(QTableWidget):
             self.setItem(i, 0, QTableWidgetItem(self.songs[i - 1].name))
             self.setItem(i, 1, QTableWidgetItem(str(self.songs[i - 1].artists)))
             self.setItem(i, 2, QTableWidgetItem(self.songs[i - 1].album.name))
-            f = self.music.playable(self.songs[i - 1])
+            f = music_core.playable(self.songs[i - 1])
             lab = FromFrame(self, f, self.songs[i - 1])
             lab.signal_play.connect(self.play_clicked)
             self.setCellWidget(i, 3, lab)

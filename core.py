@@ -5,6 +5,7 @@ from contextlib import closing
 from threading import Thread
 
 import config, qq, netease
+from models import Songs
 from netease import NETEASE
 from netease.api import NeteaseAPI
 from netease.models import NSong, NAlbum
@@ -15,6 +16,13 @@ from qq.models import QSong, Album, QAlbum
 
 class Core:
     """ 搜索核心 """
+    instance_obj = None
+
+    @staticmethod
+    def instance():
+        if Core.instance_obj is None:
+            Core.instance_obj = Core()
+        return Core.instance_obj
 
     def __init__(self):
         self.qq = QQMusicAPI()
@@ -40,7 +48,7 @@ class Core:
         :param num: 每页大小
         :return: 歌曲列表
         """
-        result = []
+        result = Songs()
         result_qq = []
         result_netease = []
         if self.use_qq:
@@ -222,3 +230,6 @@ class SONG(QSong, NSong):
 class ALBUM(QAlbum,NAlbum):
     def __init__(self):
         pass
+
+
+music_core = Core.instance()

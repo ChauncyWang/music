@@ -1,7 +1,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMainWindow, QScrollArea
 
-from core import Core
+from core import music_core
 from ui.components.playbar import PlayBar
 from ui.components.searchtable import SearchTable
 from ui.components.songlist import SongListBar
@@ -15,12 +15,12 @@ class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
         super(QMainWindow, self).__init__(parent)
-        self.music = Core()
+        self.music = music_core
 
-        self.play_bar = PlayBar(self.music, self)
+        self.play_bar = PlayBar(self)
         self.title = TitleBar(self)
         self.left_frame = SongListBar(self)
-        self.main_frame = SearchTable(self.music, self)
+        self.main_frame = SearchTable(self)
         self.main_frame.update_model()
         self.scroll = QScrollArea(self)
         self.init()

@@ -3,7 +3,7 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtWidgets import *
 
-from core import download_img, SONG, download_mp3
+from core import download_img, SONG, download_mp3, music_core
 from models import Song
 from ui import awesome
 from ui.awesome import *
@@ -17,7 +17,7 @@ class PlayBar(QFrame):
     音乐播放器下边的播放栏
     """
 
-    def __init__(self, core, parent):
+    def __init__(self,  parent):
         super().__init__(parent)
         self.play_buttons = PlayButtonGroup(self)
         self.process_bar = ProgressGroup(self)
@@ -27,7 +27,7 @@ class PlayBar(QFrame):
         self.lyric = Lyric()
         self.quality = QComboBox(self)
 
-        self.music = core
+        self.music = music_core
         self.img = QLabel(self)
         self.song = None
         self.init()

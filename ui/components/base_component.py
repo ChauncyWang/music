@@ -1,6 +1,10 @@
 import logging
 
 import os
+import sched
+import threading
+
+import time
 from PyQt5.QtCore import Qt, pyqtSignal, QRect
 from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush, QColor, QFont, QFontDatabase
 from PyQt5.QtWidgets import QFrame, QLabel, QSlider
@@ -21,10 +25,39 @@ class ClickableLabel(QLabel):
 
     def __init__(self, parent=None, text=None):
         super(QLabel, self).__init__(parent, text=text)
+        self.enter = False
+        self.padding = 0
+        self.timer = None
+        self.inc = 1
+        self.show_text = None
 
     def mousePressEvent(self, event):
         self.clicked.emit()
         self.send.emit(self.objectName())
+
+    def enterEvent(self, *args, **kwargs):
+        self.show_text = self.text()
+        text_width = self.fontMetrics().width(self.show_text)
+        d_width = text_width - self.width()
+        if d_width > 0:
+            self.padding = 0
+            self.timer = threading.Timer(0.2, self.update_loc, args={d_width})
+            self.timer.start()
+
+    def leaveEvent(self, *args, **kwargs):
+        if self.timer is not None:
+            self.timer.cancel()
+            self.setText(self.show_text)
+
+    def update_loc(self, d_width):
+        self.padding += 1
+        if self.padding == len(self.show_text):
+            self.padding = 0
+        self.setText(self.show_text[self.padding:])
+        self.update()
+        self.timer = threading.Timer(0.2, self.update_loc, args={d_width})
+        self.timer.start()
+
 
 
 class PopFrame(QFrame):

@@ -77,7 +77,7 @@ class Album:
         self.artists = None
 
     def __str__(self):
-        return '%s,%s' % (self.name, str(self.artists))
+        return '%s' % self.name
 
 
 class Quality:

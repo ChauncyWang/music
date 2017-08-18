@@ -1,6 +1,7 @@
+import gc
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPainter, QPen, QColor
-from PyQt5.QtWidgets import QFrame, QLabel
+from PyQt5.QtWidgets import QFrame, QLabel, QWidget, QVBoxLayout
 
 from models import Song, Songs
 from ui.awesome import *
@@ -12,6 +13,12 @@ class SongTable(QFrame):
     def __init__(self, parent=None):
         self.songs = None
         super().__init__(parent)
+        self.setFixedSize(600,30)
+        layout = QVBoxLayout()
+        layout.setContentsMargins(0,0,0,0)
+        layout.setSpacing(0)
+        self.setLayout(layout)
+        self.setStyleSheet("SongTable{background-color:#A0000000;}")
 
     @property
     def songs(self):
@@ -21,6 +28,20 @@ class SongTable(QFrame):
     def songs(self, songs):
         if isinstance(songs, Songs):
             self._songs = songs
+            self.setFixedSize(self.width(), (len(songs) + 1) * 30)
+            layout = self.layout()
+            # 删除之前所有控件
+            for i in range(0, layout.count()):
+                widget = layout.itemAt(0).widget()
+                widget.setParent(None)
+                layout.removeWidget(widget)
+            # 重新生成控件
+            for i, song in enumerate(songs):
+                item = SongTableItem(song)
+                item.setFixedSize(600, 30)
+                layout.addWidget(item)
+            self.update()
+
 
 
 class SongTableHeader(QFrame):
@@ -28,7 +49,7 @@ class SongTableHeader(QFrame):
 
 
 class SongTableItem(QFrame):
-    def __init__(self, parent=None, song=None):
+    def __init__(self, song,parent=None):
         super().__init__(parent)
         self.cl_name = ClickableLabel(self)
         self.cl_artist = ClickableLabel(self)
@@ -56,7 +77,6 @@ class SongTableItem(QFrame):
         painter.setPen(pen)
         painter.drawLine(10, 0, self.width() - 10, 0)
 
-        self.setGeometry(0, 0, self.parent().width(), 30)
         w = (self.width() - 20) // 10
         h = self.height()
         m = self.cl_name.fontMetrics()
