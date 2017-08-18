@@ -13,6 +13,8 @@ from qq import QQ
 from qq.api import QQMusicAPI
 from qq.models import QSong, Album, QAlbum
 
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
 
 class Core:
     """ 搜索核心 """

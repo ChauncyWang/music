@@ -7,11 +7,12 @@ import threading
 import time
 from PyQt5.QtCore import Qt, pyqtSignal, QRect
 from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush, QColor, QFont, QFontDatabase
-from PyQt5.QtWidgets import QFrame, QLabel, QSlider
+from PyQt5.QtWidgets import QFrame, QLabel, QSlider, QVBoxLayout
 
 from models import Song
 from netease import NETEASE
 from qq import QQ
+from ui.awesome import *
 from ui.config import *
 
 
@@ -21,7 +22,6 @@ class ClickableLabel(QLabel):
     在 mousePressEvent 中发射信号
     """
     clicked = pyqtSignal()
-    send = pyqtSignal(str)
 
     def __init__(self, parent=None, text=None):
         super(QLabel, self).__init__(parent, text=text)
@@ -33,7 +33,6 @@ class ClickableLabel(QLabel):
 
     def mousePressEvent(self, event):
         self.clicked.emit()
-        self.send.emit(self.objectName())
 
     def enterEvent(self, *args, **kwargs):
         self.show_text = self.text()
@@ -57,7 +56,6 @@ class ClickableLabel(QLabel):
         self.update()
         self.timer = threading.Timer(0.2, self.update_loc, args={d_width})
         self.timer.start()
-
 
 
 class PopFrame(QFrame):
@@ -94,50 +92,42 @@ class PopFrame(QFrame):
         painter.fillPath(path, QBrush(QColor.fromRgb(100, 100, 100, 127)))
 
 
-class FromFrame(QFrame):
-    """
-    播放图标显示
-    根据播放源显示不同的图标
-    目前只支持qq音乐盒和网易云音乐
-    """
-    # 播放信号
-    signal_play = pyqtSignal(Song, bool)
+class FoldList(QFrame):
+    """ 可折叠列表 """
+    folded_changed = pyqtSignal(bool)
 
-    def __init__(self, parent=None, f=0, song=None):
+    def __init__(self, parent=None):
         super().__init__(parent)
-        self.qqmusic = ClickableLabel(self)
-        self.netease = ClickableLabel(self)
-        self.f_qq = (f & QQ) != 0
-        self.f_netease = (f & NETEASE) != 0
-        self.song = song
-        self.init_components()
-        self.signal_slot()
+        self.folded = True
+        layout = QVBoxLayout()
+        layout.setSpacing(0)
+        self.setLayout(layout)
+        self.childrens = None
 
-    def signal_slot(self):
-        """ 连接信号和槽 """
-        # 使用 qq音乐的源播放音乐
-        self.qqmusic.clicked.connect(lambda: self.signal_play.emit(self.song, True))
-        # 使用 网易云音乐的源播放音乐
-        self.netease.clicked.connect(lambda: self.signal_play.emit(self.song, False))
-
-    def init_components(self):
-        self.setMinimumSize(50, 20)
-        self.setAttribute(Qt.WA_TranslucentBackground)
-        self.qqmusic.setStyleSheet("border-image: url(:/png/qqmusic);")
-        self.netease.setStyleSheet("border-image: url(:/png/netease);")
-
-    def paintEvent(self, event):
-        w = self.width()
-        h = self.height() / 2 - 10
-        if self.f_qq and self.f_netease:
-            self.qqmusic.setGeometry(w / 2 - 21, h, 20, 20)
-            self.netease.setGeometry(w / 2 + 1, h, 20, 20)
-        elif self.f_qq:
-            self.qqmusic.setGeometry(w / 2 - 10, h, 20, 20)
-            self.netease.hide()
-        elif self.f_netease:
-            self.netease.setGeometry(w / 2 - 10, h, 20, 20)
-            self.qqmusic.hide()
+    def fold(self):
+        """ 修改折叠状态 """
+        self.folded = not self.folded
+        if self.folded:
+            for item in self.childrens:
+                self.layout().removeWidget(item)
         else:
-            self.netease.hide()
-            self.qqmusic.hide()
+            for item in self.childrens:
+                self.layout().addWidget(item)
+        self.folded_changed.emit(self.folded)
+
+
+class IconLabel(ClickableLabel):
+    qq = "url(:/png/qqmusic)"
+    netease = "url(:/png/netease)"
+
+    def __init__(self, parent, icon, text):
+        super().__init__(parent, text)
+        self.icon = icon
+        self.setAlignment(Qt.AlignCenter)
+        self.setStyleSheet("border-image:%s;color:#00000000;" % self.icon)
+
+    def enterEvent(self, *args, **kwargs):
+        self.setStyleSheet("border-image:none;font: 20px 'FontAwesome'; color:#%s;" % theme_color)
+
+    def leaveEvent(self, *args, **kwargs):
+        self.setStyleSheet("border-image:%s;color:#00000000;" % self.icon)

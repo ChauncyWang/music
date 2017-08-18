@@ -10,11 +10,11 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QHBoxLayout, QVBoxLayout,
 from core import Core
 from models import Song, Songs
 from ui import resource
+from ui.awesome import *
+from ui.components.base_component import IconLabel
 from ui.components.mainwindow import MainWindow
 from ui.components.songtable import SongTableItem, SongTable
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
 
 QCoreApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
 app = QApplication(sys.argv)
@@ -26,7 +26,7 @@ else:
 main = QMainWindow()
 main.setStyleSheet("QMainWindow{border-image: url(:/jpg/bg1);}")
 songtable = SongTable(main)
-songs = Core().search("薛之谦", 1, 20)
+songs = Core().search("薛之谦", 0, 20)
 songtable.songs = songs
 main.show()
 sys.exit(app.exec_())

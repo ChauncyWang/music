@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QMainWindow, QScrollArea
 
 from core import music_core
 from ui.components.playbar import PlayBar
-from ui.components.searchtable import SearchTable
 from ui.components.songlist import SongListBar
+from ui.components.songtable import SongTable
 from ui.components.titlebar import TitleBar
 
 
@@ -20,8 +20,7 @@ class MainWindow(QMainWindow):
         self.play_bar = PlayBar(self)
         self.title = TitleBar(self)
         self.left_frame = SongListBar(self)
-        self.main_frame = SearchTable(self)
-        self.main_frame.update_model()
+        self.main_frame = SongTable(self)
         self.scroll = QScrollArea(self)
         self.init()
         self.signal_slot()
@@ -51,7 +50,7 @@ class MainWindow(QMainWindow):
         text = self.title.input.text()
         if text != "":
             songs = self.music.search(self.title.input.text(), 0, 20)
-            self.main_frame.set_songs(songs)
+            self.main_frame.songs = songs
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Return:
