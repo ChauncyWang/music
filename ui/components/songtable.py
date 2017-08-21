@@ -29,21 +29,12 @@ class SongTable(QFrame):
         self.widget.setLayout(layout)
         self.scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.scroll.setStyleSheet("""QScrollArea{background-color:#A0000000;}
-QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical,
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
-QScrollBar:up-arrow:vertical, QScrollBar:down-arrow:vertical {
-    background: #00000000;
-}
-QScrollBar:vertical {
-    background: #20FFFFFF;
-    width:8px;
-}
-
-QScrollBar::handle:vertical {
-    border-radius:4px;
-    width:8px;
-    background: #40FFFFFF;
-}""")
+            QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical,
+            QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+            QScrollBar:up-arrow:vertical, QScrollBar:down-arrow:vertical { background: #00000000;}
+            QScrollBar:vertical { background: #20FFFFFF;width:8px;}
+            QScrollBar::handle:vertical { border-radius:4px;width:8px;background: #40FFFFFF;}
+        """)
         self.widget.setStyleSheet("background-color:#00000000;")
         self.scroll.setWidget(self.widget)
 

@@ -17,11 +17,11 @@ class QQMusicAPI(BaseAPI):
     def search_artists(self, content, page, num):
         pass
 
-    def __init__(self, timeout=60, proxy=None):
-        self.session = requests.session()
+    def __init__(self,session, timeout=60, proxy=None, cookies=None):
+        self.session = session
         self.timeout = timeout
-        self.proxies = {'http': proxy, 'https': proxy}
-        self.session.cookies = cookiejar.LWPCookieJar('a.c')
+        self.proxies = proxy
+        self.session.cookies = cookies
 
     def get(self, url, params=None, headers=None, stream=False):
         """

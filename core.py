@@ -2,7 +2,10 @@ import hashlib
 import logging
 import os
 from contextlib import closing
+from http import cookiejar
 from threading import Thread
+
+import requests
 
 import config, qq, netease
 from models import Songs
@@ -26,9 +29,13 @@ class Core:
             Core.instance_obj = Core()
         return Core.instance_obj
 
-    def __init__(self):
-        self.qq = QQMusicAPI()
-        self.netease = NeteaseAPI()
+    def __init__(self, timeout=60, proxy=None):
+        self.session = requests.session()
+        self.timeout = timeout
+        self.proxies = {'http': proxy, 'https': proxy}
+        self.session.cookies = cookiejar.LWPCookieJar('a.c')
+        self.qq = QQMusicAPI(self.session, timeout, proxy, self.session.cookies)
+        self.netease = NeteaseAPI(self.session, timeout, proxy, self.session.cookies)
         self.use_qq = False
         self.use_netease = False
         self.use_api(qq.QQ | netease.NETEASE)

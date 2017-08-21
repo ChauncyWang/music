@@ -19,11 +19,11 @@ class NeteaseAPI(BaseAPI):
     网易云音乐 API
     """
 
-    def __init__(self, timeout=60, proxy=None):
-        self.session = requests.session()
+    def __init__(self, session, timeout=60, proxy=None, cookies=None):
+        self.session = session
         self.timeout = timeout
-        self.proxies = {'http': proxy, 'https': proxy}
-        self.session.cookies = cookiejar.LWPCookieJar(cookie_path)
+        self.proxies = proxy
+        self.session.cookies = cookies
 
     @exception
     def post(self, url, data=None, headers=header):
@@ -209,4 +209,3 @@ class NeteaseAPI(BaseAPI):
         response = self.post(song_url, params)
         response = json.loads(response.text)
         return response['data'][0]['url']
-
