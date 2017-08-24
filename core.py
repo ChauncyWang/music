@@ -5,16 +5,18 @@ from contextlib import closing
 from http import cookiejar
 from threading import Thread
 
+import api.netease
+import api.qq
 import requests
+from api.netease import NETEASE
+from api.netease.api import NeteaseAPI
+from api.qq import QQ
+from api.qq.models import QSong, Album, QAlbum
 
-import config, qq, netease
+import config
+from api.netease.models import NSong, NAlbum
+from api.qq.api import QQMusicAPI
 from models import Songs
-from netease import NETEASE
-from netease.api import NeteaseAPI
-from netease.models import NSong, NAlbum
-from qq import QQ
-from qq.api import QQMusicAPI
-from qq.models import QSong, Album, QAlbum
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
@@ -38,14 +40,14 @@ class Core:
         self.netease = NeteaseAPI(self.session, timeout, proxy, self.session.cookies)
         self.use_qq = False
         self.use_netease = False
-        self.use_api(qq.QQ | netease.NETEASE)
+        self.set_api(QQ | NETEASE)
 
-    def use_api(self, x):
+    def set_api(self, x):
         """ 设置搜索使用的 api """
-        if x & qq.QQ:
+        if x & QQ:
             logging.info("使用QQ音乐API...")
             self.use_qq = True
-        if x & netease.NETEASE:
+        if x & NETEASE:
             logging.info("使用网易云音乐API...")
             self.use_netease = True
 

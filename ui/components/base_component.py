@@ -1,18 +1,9 @@
-import logging
-
-import os
-import sched
 import threading
 
-import time
-from PyQt5.QtCore import Qt, pyqtSignal, QRect
-from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush, QColor, QFont, QFontDatabase
-from PyQt5.QtWidgets import QFrame, QLabel, QSlider, QVBoxLayout
+from PyQt5.QtCore import Qt, pyqtSignal
+from PyQt5.QtGui import QPainterPath, QPainter, QPen, QBrush
+from PyQt5.QtWidgets import QFrame, QLabel, QVBoxLayout
 
-from models import Song
-from netease import NETEASE
-from qq import QQ
-from ui.awesome import *
 from ui.config import *
 
 

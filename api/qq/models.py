@@ -1,6 +1,6 @@
+from api.qq import QQ
 from exception_handle import exception, QParseException
 from models import *
-from qq import QQ
 
 
 class SearchType:

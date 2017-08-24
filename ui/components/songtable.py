@@ -1,14 +1,13 @@
-import gc
 import logging
 
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtGui import QPainter, QPen, QColor
 from PyQt5.QtWidgets import QFrame, QLabel, QWidget, QVBoxLayout, QScrollArea
 
+from api.netease import NETEASE
+from api.qq import QQ
 from core import music_core
 from models import Song, Songs
-from netease import NETEASE
-from qq import QQ
 from ui.awesome import *
 from ui.components.base_component import ClickableLabel, IconLabel
 from ui.config import theme_color
@@ -120,7 +119,8 @@ class SongTableItem(QFrame):
         w = (self.width() - 20) // 10
         h = self.height()
         m = self.cl_name.fontMetrics()
-        self.cl_name.setGeometry(10, 0, m.width(self.cl_name.text()), h)
+        cl_name_w = m.width(self.cl_name.text())
+        self.cl_name.setGeometry(10, 0, cl_name_w if cl_name_w < w * 5 else w * 5, h)
         self.cl_artist.setGeometry(w * 5, 0, w * 2, h)
         self.cl_album.setGeometry(w * 7, 0, w * 2, h)
         self.l_time.setGeometry(w * 9, 0, w, h)

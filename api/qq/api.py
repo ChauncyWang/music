@@ -1,12 +1,11 @@
 import json
 from html.parser import HTMLParser
-from http import cookiejar
-
-import requests
 
 from api import BaseAPI
-from qq.config import *
-from qq.models import *
+from api.netease.config import header
+from api.qq.config import *
+from api.qq.models import *
+from models import *
 
 
 class QQMusicAPI(BaseAPI):
@@ -23,7 +22,7 @@ class QQMusicAPI(BaseAPI):
         self.proxies = proxy
         self.session.cookies = cookies
 
-    def get(self, url, params=None, headers=None, stream=False):
+    def get(self, url, params=None, headers=header, stream=False):
         """
         get 请求
         :param stream:

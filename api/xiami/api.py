@@ -3,7 +3,7 @@ from http import cookiejar
 import requests
 
 from api import BaseAPI
-from xiami.config import search_url
+from api.xiami import search_url
 
 
 class XiamiAPI(BaseAPI):

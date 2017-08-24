@@ -4,7 +4,8 @@ import json
 import os
 
 from Crypto.Cipher import AES
-from netease import config
+
+from api.netease import config
 
 
 def create_secret_key(a):

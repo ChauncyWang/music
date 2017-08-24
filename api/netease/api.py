@@ -1,17 +1,13 @@
 import json
 import logging
-
 import re
-import requests
+
+from api.netease.config import *
+from api.netease.util import encrypted_request
 
 from api import BaseAPI
-from config import *
-from netease.models import *
-from netease.config import *
-from netease.util import encrypted_request
-
+from api.netease.models import *
 from exception_handle import *
-from http import cookiejar
 
 
 class NeteaseAPI(BaseAPI):
@@ -121,6 +117,7 @@ class NeteaseAPI(BaseAPI):
         :param br:歌曲品质
         :return:歌曲链接
         """
+        logging.info("获取音乐播放链接:[id:%s, br:%d]" % (_id, br))
         params = {'ids': [_id], 'br': br, 'csrf_token': ''}
         response = self.post(song_url, params)
         response = json.loads(response.text)

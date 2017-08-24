@@ -2,6 +2,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMainWindow, QScrollArea
 
 from core import music_core
+from task_thread import task
 from ui.components.playbar import PlayBar
 from ui.components.songlist import SongListBar
 from ui.components.songtable import SongTable
@@ -16,6 +17,7 @@ class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super(QMainWindow, self).__init__(parent)
         self.music = music_core
+        self.search_task = None
 
         self.play_bar = PlayBar(self)
         self.title = TitleBar(self)
@@ -46,11 +48,23 @@ class MainWindow(QMainWindow):
         self.title.search_icon.clicked.connect(self.search_song)
         self.main_frame.play_song.connect(self.play_bar.set_song)
 
-    def search_song(self):
+    """def search_song(self):
         text = self.title.input.text()
         if text != "":
-            songs = self.music.search(self.title.input.text(), 0, 20)
+            songs = self.music.search(text, 0, 20)
             self.main_frame.songs = songs
+    """
+
+    def search_song(self):
+        text = self.title.input.text()
+        if text != "" and self.search_task is None:
+            self.search_task = task(self.music.search, text, 0, 20)
+            self.search_task.finish.connect(self.search_result)
+            self.search_task.start()
+
+    def search_result(self, songs):
+        self.main_frame.songs = songs
+        self.search_task = None
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Return:

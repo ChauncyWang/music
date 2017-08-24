@@ -10,7 +10,7 @@ from ui import resource
 from ui.components.mainwindow import MainWindow
 try:
     logging.basicConfig(level=logging.DEBUG,
-                        format='%(asctime)s (%(filename)s:%(lineno)d) [%(threadName)s]-[%(levelname)s]: %(message)s',)
+                        format='%(asctime)s [%5(levelname)s] (%(filename)s:%(lineno)d) [%(threadName)s]: %(message)s',)
 
     QCoreApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     app = QApplication(sys.argv)

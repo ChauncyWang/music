@@ -1,6 +1,6 @@
-from models import Song, Album, Artist, Quality, Artists, Songs
+from api.netease import NETEASE
 from exception_handle import exception, NParseException
-from netease import NETEASE
+from models import Song, Album, Artist, Quality, Artists, Songs
 from util import dict_adapter
 
 
