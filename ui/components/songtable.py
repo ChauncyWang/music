@@ -118,9 +118,7 @@ class SongTableItem(QFrame):
 
         w = (self.width() - 20) // 10
         h = self.height()
-        m = self.cl_name.fontMetrics()
-        cl_name_w = m.width(self.cl_name.text())
-        self.cl_name.setGeometry(10, 0, cl_name_w if cl_name_w < w * 5 else w * 5, h)
+        self.cl_name.setGeometry(10, 0, w * 5, h)
         self.cl_artist.setGeometry(w * 5, 0, w * 2, h)
         self.cl_album.setGeometry(w * 7, 0, w * 2, h)
         self.l_time.setGeometry(w * 9, 0, w, h)

@@ -20,7 +20,7 @@ class ClickableLabel(QLabel):
         self.padding = 0
         self.timer = None
         self.inc = 1
-        self.show_text = None
+        self.show_text = text
 
     def mousePressEvent(self, event):
         self.clicked.emit()
