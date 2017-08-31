@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/hy/PycharmProjects/python1/music_ui/library.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/library.cpp.o"
   "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
+  "/home/hy/PycharmProjects/python1/music_ui/myitem.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/myitem.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

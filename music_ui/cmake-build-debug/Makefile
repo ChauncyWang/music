@@ -190,6 +190,33 @@ music_ui_automoc.cpp.s:
 	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/music_ui_automoc.cpp.s
 .PHONY : music_ui_automoc.cpp.s
 
+myitem.o: myitem.cpp.o
+
+.PHONY : myitem.o
+
+# target to build an object file
+myitem.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.o
+.PHONY : myitem.cpp.o
+
+myitem.i: myitem.cpp.i
+
+.PHONY : myitem.i
+
+# target to preprocess a source file
+myitem.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.i
+.PHONY : myitem.cpp.i
+
+myitem.s: myitem.cpp.s
+
+.PHONY : myitem.s
+
+# target to generate assembly for a file
+myitem.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.s
+.PHONY : myitem.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,6 +233,9 @@ help:
 	@echo "... music_ui_automoc.o"
 	@echo "... music_ui_automoc.i"
 	@echo "... music_ui_automoc.s"
+	@echo "... myitem.o"
+	@echo "... myitem.i"
+	@echo "... myitem.s"
 .PHONY : help
 
 

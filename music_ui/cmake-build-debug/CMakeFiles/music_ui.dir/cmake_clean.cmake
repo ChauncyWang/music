@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "music_ui_automoc.cpp"
   "CMakeFiles/music_ui.dir/library.cpp.o"
+  "CMakeFiles/music_ui.dir/myitem.cpp.o"
   "CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
   "libmusic_ui.pdb"
   "libmusic_ui.so"

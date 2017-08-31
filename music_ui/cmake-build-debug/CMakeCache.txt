@@ -197,7 +197,7 @@ Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 music_ui_BINARY_DIR:STATIC=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug
 
 //Dependencies for the target
-music_ui_LIB_DEPENDS:STATIC=general;Qt5::Widgets;
+music_ui_LIB_DEPENDS:STATIC=general;Qt5::Widgets;general;Qt5::Core;
 
 //Value Computed by CMake
 music_ui_SOURCE_DIR:STATIC=/home/hy/PycharmProjects/python1/music_ui

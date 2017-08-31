@@ -123,6 +123,12 @@
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/library.h">
 			<Option target="music_ui"/>
 		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/myitem.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/myitem.h">
+			<Option target="music_ui"/>
+		</Unit>
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -160,6 +166,12 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
 		</Unit>
 	</Project>
