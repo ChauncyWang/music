@@ -1,0 +1,4 @@
+/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir
+/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir

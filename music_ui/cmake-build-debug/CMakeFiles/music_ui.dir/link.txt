@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11 -g  -shared -Wl,-soname,libmusic_ui.so -o libmusic_ui.so CMakeFiles/music_ui.dir/library.cpp.o CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1 
