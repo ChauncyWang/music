@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-93-generic - x86_64
+The system is: Linux - 4.10.0-32-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_874ed/fast"
-/usr/bin/make -f CMakeFiles/cmTC_874ed.dir/build.make CMakeFiles/cmTC_874ed.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_874ed.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_874ed.dir/testCCompiler.c.o   -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_874ed
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_874ed.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_874ed.dir/testCCompiler.c.o  -o cmTC_874ed 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_44d70/fast"
+/usr/bin/make -f CMakeFiles/cmTC_44d70.dir/build.make CMakeFiles/cmTC_44d70.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44d70.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_44d70.dir/testCCompiler.c.o   -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_44d70
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44d70.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_44d70.dir/testCCompiler.c.o  -o cmTC_44d70 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f1f2d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f1f2d.dir/build.make CMakeFiles/cmTC_f1f2d.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o   -c /home/hy/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f1f2d
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f2d.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o  -o cmTC_f1f2d  
+Run Build Command:"/usr/bin/make" "cmTC_763d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_763d4.dir/build.make CMakeFiles/cmTC_763d4.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o   -c /home/chava/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_763d4
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_763d4.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o  -o cmTC_763d4  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f1f2d' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclGZeBp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f1f2d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_763d4' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cczag99m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_763d4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f1f2d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f1f2d.dir/build.make CMakeFiles/cmTC_f1f2d.dir/build]
-  ignore line: [make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o   -c /home/hy/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f1f2d]
-  ignore line: [/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f2d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o  -o cmTC_f1f2d  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_763d4/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_763d4.dir/build.make CMakeFiles/cmTC_763d4.dir/build]
+  ignore line: [make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o   -c /home/chava/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_763d4]
+  ignore line: [/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_763d4.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o  -o cmTC_763d4  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f1f2d' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclGZeBp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f1f2d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_763d4' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cczag99m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_763d4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cclGZeBp.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cczag99m.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f1f2d] ==> ignore
+    arg [cmTC_763d4] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_f1f2d.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_763d4.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -152,17 +152,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6fd38/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6fd38.dir/build.make CMakeFiles/cmTC_6fd38.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6fd38.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_6fd38.dir/feature_tests.c.o   -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6fd38
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fd38.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_6fd38.dir/feature_tests.c.o  -o cmTC_6fd38 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2201c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2201c.dir/build.make CMakeFiles/cmTC_2201c.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2201c.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_2201c.dir/feature_tests.c.o   -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2201c
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2201c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2201c.dir/feature_tests.c.o  -o cmTC_2201c 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -172,17 +172,17 @@ make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-buil
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e9520/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e9520.dir/build.make CMakeFiles/cmTC_e9520.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e9520.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_e9520.dir/feature_tests.c.o   -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e9520
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9520.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_e9520.dir/feature_tests.c.o  -o cmTC_e9520 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0c42e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c42e.dir/build.make CMakeFiles/cmTC_0c42e.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c42e.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_0c42e.dir/feature_tests.c.o   -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0c42e
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c42e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0c42e.dir/feature_tests.c.o  -o cmTC_0c42e 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -192,17 +192,17 @@ make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-buil
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da755/fast"
-/usr/bin/make -f CMakeFiles/cmTC_da755.dir/build.make CMakeFiles/cmTC_da755.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_da755.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_da755.dir/feature_tests.c.o   -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_da755
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da755.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_da755.dir/feature_tests.c.o  -o cmTC_da755 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bb727/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb727.dir/build.make CMakeFiles/cmTC_bb727.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb727.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_bb727.dir/feature_tests.c.o   -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bb727
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb727.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_bb727.dir/feature_tests.c.o  -o cmTC_bb727 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -210,30 +210,30 @@ make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-buil
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4552e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4552e.dir/build.make CMakeFiles/cmTC_4552e.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4552e.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_4552e.dir/testCXXCompiler.cxx.o -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_4552e
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4552e.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_4552e.dir/testCXXCompiler.cxx.o  -o cmTC_4552e 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d0594/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0594.dir/build.make CMakeFiles/cmTC_d0594.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0594.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_d0594.dir/testCXXCompiler.cxx.o -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d0594
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0594.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_d0594.dir/testCXXCompiler.cxx.o  -o cmTC_d0594 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fd27f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fd27f.dir/build.make CMakeFiles/cmTC_fd27f.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o -c /home/hy/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_fd27f
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd27f.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd27f  
+Run Build Command:"/usr/bin/make" "cmTC_9a20c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a20c.dir/build.make CMakeFiles/cmTC_9a20c.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o -c /home/chava/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_9a20c
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a20c.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9a20c  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -243,23 +243,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd27f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc47kt8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_fd27f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9a20c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmyIrxO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9a20c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fd27f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_fd27f.dir/build.make CMakeFiles/cmTC_fd27f.dir/build]
-  ignore line: [make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o -c /home/hy/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_fd27f]
-  ignore line: [/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd27f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd27f  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9a20c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9a20c.dir/build.make CMakeFiles/cmTC_9a20c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o -c /home/chava/文档/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_9a20c]
+  ignore line: [/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a20c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9a20c  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -269,13 +269,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd27f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc47kt8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_fd27f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9a20c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmyIrxO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9a20c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc47kt8P.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccmyIrxO.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fd27f] ==> ignore
+    arg [cmTC_9a20c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_fd27f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9a20c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -334,17 +334,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7e439/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7e439.dir/build.make CMakeFiles/cmTC_7e439.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7e439.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_7e439.dir/feature_tests.cxx.o -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7e439
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e439.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_7e439.dir/feature_tests.cxx.o  -o cmTC_7e439 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_03f87/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03f87.dir/build.make CMakeFiles/cmTC_03f87.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_03f87.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_03f87.dir/feature_tests.cxx.o -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_03f87
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03f87.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_03f87.dir/feature_tests.cxx.o  -o cmTC_03f87 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -407,17 +407,17 @@ make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-buil
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a7be6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a7be6.dir/build.make CMakeFiles/cmTC_a7be6.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a7be6.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_a7be6.dir/feature_tests.cxx.o -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a7be6
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7be6.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_a7be6.dir/feature_tests.cxx.o  -o cmTC_a7be6 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_31460/fast"
+/usr/bin/make -f CMakeFiles/cmTC_31460.dir/build.make CMakeFiles/cmTC_31460.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31460.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_31460.dir/feature_tests.cxx.o -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_31460
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31460.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_31460.dir/feature_tests.cxx.o  -o cmTC_31460 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -480,17 +480,17 @@ make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-buil
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6cca3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6cca3.dir/build.make CMakeFiles/cmTC_6cca3.dir/build
-make[1]: Entering directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6cca3.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_6cca3.dir/feature_tests.cxx.o -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6cca3
-/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cca3.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_6cca3.dir/feature_tests.cxx.o  -o cmTC_6cca3 
-make[1]: Leaving directory '/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9bd1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9bd1b.dir/build.make CMakeFiles/cmTC_9bd1b.dir/build
+make[1]: Entering directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9bd1b.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_9bd1b.dir/feature_tests.cxx.o -c /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9bd1b
+/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bd1b.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_9bd1b.dir/feature_tests.cxx.o  -o cmTC_9bd1b 
+make[1]: Leaving directory '/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

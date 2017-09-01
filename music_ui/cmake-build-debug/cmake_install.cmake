@@ -1,4 +1,4 @@
-# Install script for directory: /home/hy/PycharmProjects/python1/music_ui
+# Install script for directory: /home/chava/PycharmProjects/music_c/music_ui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

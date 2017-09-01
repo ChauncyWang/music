@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/music_ui.dir/main.cpp.o"
   "CMakeFiles/music_ui.dir/Interface.cpp.o"
   "CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o"
-  "CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o"
+  "CMakeFiles/music_ui.dir/cpp/components/ProgressBar.cpp.o"
   "CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
   "../music_ui.pdb"
   "../music_ui"

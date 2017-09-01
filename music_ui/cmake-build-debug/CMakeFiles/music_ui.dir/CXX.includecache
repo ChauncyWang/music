@@ -6,61 +6,91 @@
 
 #IncludeRegexTransform: 
 
+..//cpp/components/ProgressBar.h
+QtWidgets/QFrame
+-
+iostream
+-
+
 ..//cpp/components/WButton.h
 QtWidgets/QLabel
 -
 
-/home/hy/PycharmProjects/python1/music_ui/Interface.cpp
+/home/chava/PycharmProjects/music_c/music_ui/Interface.cpp
 python3.5/Python.h
 -
 Interface.h
-/home/hy/PycharmProjects/python1/music_ui/Interface.h
+/home/chava/PycharmProjects/music_c/music_ui/Interface.h
 iostream
 -
 
-/home/hy/PycharmProjects/python1/music_ui/Interface.h
+/home/chava/PycharmProjects/music_c/music_ui/Interface.h
 
-/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.cpp
+/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/music_ui_automoc.cpp
+music_ui_automoc.dir/moc_ProgressBar_EWWY2U4MIAODLQ.cpp
+/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_ProgressBar_EWWY2U4MIAODLQ.cpp
 music_ui_automoc.dir/moc_WButton_D23EQB723RXJIB.cpp
-/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_WButton_D23EQB723RXJIB.cpp
+/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_WButton_D23EQB723RXJIB.cpp
 
-/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_WButton_D23EQB723RXJIB.cpp
-../../cpp/components/WButton.h
-/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.h
+/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_ProgressBar_EWWY2U4MIAODLQ.cpp
+../../cpp/components/ProgressBar.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/ProgressBar.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp
-component.h
-/home/hy/PycharmProjects/python1/music_ui/cpp/component.h
+/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/music_ui_automoc.dir/moc_WButton_D23EQB723RXJIB.cpp
+../../cpp/components/WButton.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/WButton.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
 
-/home/hy/PycharmProjects/python1/music_ui/cpp/component.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/component.cpp
+component.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/component.h
+
+/home/chava/PycharmProjects/music_c/music_ui/cpp/component.h
 QtWidgets/QWidget
 -
 QtWidgets/QLabel
 -
 
-/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp
-WButton.h
-/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/ProgressBar.cpp
+ProgressBar.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/ProgressBar.h
+QtGui/QPainter
+-
+QtGui/QMouseEvent
+-
 
-/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/ProgressBar.h
+QtWidgets/QFrame
+-
+iostream
+-
+
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/WButton.cpp
+WButton.h
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/WButton.h
+
+/home/chava/PycharmProjects/music_c/music_ui/cpp/components/WButton.h
 QtWidgets/QLabel
 -
 
-/home/hy/PycharmProjects/python1/music_ui/library.cpp
+/home/chava/PycharmProjects/music_c/music_ui/library.cpp
 library.h
-/home/hy/PycharmProjects/python1/music_ui/library.h
+/home/chava/PycharmProjects/music_c/music_ui/library.h
 QtWidgets/QApplication
 -
 iostream
 -
 
-/home/hy/PycharmProjects/python1/music_ui/library.h
+/home/chava/PycharmProjects/music_c/music_ui/library.h
 
-/home/hy/PycharmProjects/python1/music_ui/main.cpp
+/home/chava/PycharmProjects/music_c/music_ui/main.cpp
 iostream
 -
 python3.5/Python.h
@@ -68,6 +98,10 @@ python3.5/Python.h
 QtWidgets/QApplication
 -
 cpp/components/WButton.h
+-
+QtWidgets/QMainWindow
+-
+cpp/components/ProgressBar.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -762,6 +796,14 @@ algorithm
 QtCore/qpoint.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
+qevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
+qpainter.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 QtCore/qpair.h
 -
@@ -864,6 +906,16 @@ QtCore/qpoint.h
 QtCore/qsize.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
+QtCore/qglobal.h
+-
+QtCore/qsize.h
+-
+QtCore/qlist.h
+-
+QtGui/qpixmap.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
 QtGui/qtransform.h
 -
@@ -914,6 +966,36 @@ QtGui/qwindowdefs.h
 QtCore/qrect.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
+QtCore/qnamespace.h
+-
+QtCore/qrect.h
+-
+QtCore/qpoint.h
+-
+QtCore/qscopedpointer.h
+-
+QtGui/qpixmap.h
+-
+QtGui/qimage.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qpolygon.h
+-
+QtGui/qpen.h
+-
+QtGui/qbrush.h
+-
+QtGui/qmatrix.h
+-
+QtGui/qtransform.h
+-
+QtGui/qfontinfo.h
+-
+QtGui/qfontmetrics.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
 QtGui/qmatrix.h
 -
@@ -931,6 +1013,12 @@ QtCore/qscopedpointer.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
 QtGui/qwindowdefs.h
 -
+QtGui/qcolor.h
+-
+QtGui/qbrush.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
 QtGui/qcolor.h
 -
 QtGui/qbrush.h
@@ -980,6 +1068,14 @@ QtCore/qglobal.h
 QtCore/qprocessordetection.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
+QtCore/qnamespace.h
+-
+QtCore/qchar.h
+-
+QtCore/qmetatype.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
 QtCore/qobject.h
 -
@@ -1026,9 +1122,17 @@ QtCore/qglobal.h
 qapplication.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
+qframe.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 qlabel.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+qmainwindow.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 qwidget.h
@@ -1062,8 +1166,20 @@ QtWidgets/qwidget.h
 QtWidgets/qframe.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+QtWidgets/qwidget.h
+-
+QtWidgets/qtabwidget.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 QtCore/qobject.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
+QtWidgets/qwidget.h
+-
+QtGui/qicon.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h

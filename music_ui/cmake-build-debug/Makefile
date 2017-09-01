@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hy/PycharmProjects/python1/music_ui
+CMAKE_SOURCE_DIR = /home/chava/PycharmProjects/music_c/music_ui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug
+CMAKE_BINARY_DIR = /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -190,32 +190,32 @@ cpp/component.cpp.s:
 	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/component.cpp.s
 .PHONY : cpp/component.cpp.s
 
-cpp/components/ProcessBar.o: cpp/components/ProcessBar.cpp.o
+cpp/components/ProgressBar.o: cpp/components/ProgressBar.cpp.o
 
-.PHONY : cpp/components/ProcessBar.o
+.PHONY : cpp/components/ProgressBar.o
 
 # target to build an object file
-cpp/components/ProcessBar.cpp.o:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o
-.PHONY : cpp/components/ProcessBar.cpp.o
+cpp/components/ProgressBar.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProgressBar.cpp.o
+.PHONY : cpp/components/ProgressBar.cpp.o
 
-cpp/components/ProcessBar.i: cpp/components/ProcessBar.cpp.i
+cpp/components/ProgressBar.i: cpp/components/ProgressBar.cpp.i
 
-.PHONY : cpp/components/ProcessBar.i
+.PHONY : cpp/components/ProgressBar.i
 
 # target to preprocess a source file
-cpp/components/ProcessBar.cpp.i:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.i
-.PHONY : cpp/components/ProcessBar.cpp.i
+cpp/components/ProgressBar.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProgressBar.cpp.i
+.PHONY : cpp/components/ProgressBar.cpp.i
 
-cpp/components/ProcessBar.s: cpp/components/ProcessBar.cpp.s
+cpp/components/ProgressBar.s: cpp/components/ProgressBar.cpp.s
 
-.PHONY : cpp/components/ProcessBar.s
+.PHONY : cpp/components/ProgressBar.s
 
 # target to generate assembly for a file
-cpp/components/ProcessBar.cpp.s:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.s
-.PHONY : cpp/components/ProcessBar.cpp.s
+cpp/components/ProgressBar.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProgressBar.cpp.s
+.PHONY : cpp/components/ProgressBar.cpp.s
 
 cpp/components/WButton.o: cpp/components/WButton.cpp.o
 
@@ -341,9 +341,9 @@ help:
 	@echo "... cpp/component.o"
 	@echo "... cpp/component.i"
 	@echo "... cpp/component.s"
-	@echo "... cpp/components/ProcessBar.o"
-	@echo "... cpp/components/ProcessBar.i"
-	@echo "... cpp/components/ProcessBar.s"
+	@echo "... cpp/components/ProgressBar.o"
+	@echo "... cpp/components/ProgressBar.i"
+	@echo "... cpp/components/ProgressBar.s"
 	@echo "... cpp/components/WButton.o"
 	@echo "... cpp/components/WButton.i"
 	@echo "... cpp/components/WButton.s"

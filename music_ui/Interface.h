@@ -6,7 +6,7 @@
 #define MUSIC_UI_INTERFACE_H
 
 /**
- * c++ 要掉用的 python 接口
+ * c++ 要调用的 python 接口
  * 在这里进行封装
  */
 class Interface {

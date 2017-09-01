@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hy/PycharmProjects/python1/music_ui
+CMAKE_SOURCE_DIR = /home/chava/PycharmProjects/music_c/music_ui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug
+CMAKE_BINARY_DIR = /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug
 
 # Utility rule file for music_ui_automoc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug
 include CMakeFiles/music_ui_automoc.dir/progress.make
 
 CMakeFiles/music_ui_automoc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc and uic for target music_ui"
-	/home/hy/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_autogen /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir/ Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc and uic for target music_ui"
+	/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_autogen /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir/ Debug
 
 music_ui_automoc: CMakeFiles/music_ui_automoc
 music_ui_automoc: CMakeFiles/music_ui_automoc.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/music_ui_automoc.dir/clean:
 .PHONY : CMakeFiles/music_ui_automoc.dir/clean
 
 CMakeFiles/music_ui_automoc.dir/depend:
-	cd /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hy/PycharmProjects/python1/music_ui /home/hy/PycharmProjects/python1/music_ui /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chava/PycharmProjects/music_c/music_ui /home/chava/PycharmProjects/music_c/music_ui /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/music_ui_automoc.dir/depend
 
