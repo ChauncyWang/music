@@ -38,10 +38,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="music_ui">
-				<Option output="/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/libmusic_ui.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug"/>
+				<Option output="/home/hy/PycharmProjects/python1/music_ui/music_ui" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DQT_WIDGETS_LIB"/>
@@ -71,10 +71,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="music_ui/fast">
-				<Option output="/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/libmusic_ui.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug"/>
+				<Option output="/home/hy/PycharmProjects/python1/music_ui/music_ui" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DQT_WIDGETS_LIB"/>
@@ -114,7 +114,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/Interface.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/Interface.h">
+			<Option target="music_ui"/>
+		</Unit>
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/component.h">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.h">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp">
+			<Option target="music_ui"/>
+		</Unit>
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.h">
 			<Option target="music_ui"/>
 		</Unit>
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/library.cpp">
@@ -123,10 +147,7 @@
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/library.h">
 			<Option target="music_ui"/>
 		</Unit>
-		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/myitem.cpp">
-			<Option target="music_ui"/>
-		</Unit>
-		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/myitem.h">
+		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/main.cpp">
 			<Option target="music_ui"/>
 		</Unit>
 		<Unit filename="/home/hy/PycharmProjects/python1/music_ui/CMakeLists.txt">

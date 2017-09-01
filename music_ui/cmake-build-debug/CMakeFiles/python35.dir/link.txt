@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpython35.a  CMakeFiles/python35.dir/python35_automoc.cpp.o
+/usr/bin/ranlib libpython35.a

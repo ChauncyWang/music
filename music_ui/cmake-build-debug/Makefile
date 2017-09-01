@@ -136,6 +136,114 @@ music_ui_automoc/fast:
 	$(MAKE) -f CMakeFiles/music_ui_automoc.dir/build.make CMakeFiles/music_ui_automoc.dir/build
 .PHONY : music_ui_automoc/fast
 
+Interface.o: Interface.cpp.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/Interface.cpp.o
+.PHONY : Interface.cpp.o
+
+Interface.i: Interface.cpp.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/Interface.cpp.i
+.PHONY : Interface.cpp.i
+
+Interface.s: Interface.cpp.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/Interface.cpp.s
+.PHONY : Interface.cpp.s
+
+cpp/component.o: cpp/component.cpp.o
+
+.PHONY : cpp/component.o
+
+# target to build an object file
+cpp/component.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/component.cpp.o
+.PHONY : cpp/component.cpp.o
+
+cpp/component.i: cpp/component.cpp.i
+
+.PHONY : cpp/component.i
+
+# target to preprocess a source file
+cpp/component.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/component.cpp.i
+.PHONY : cpp/component.cpp.i
+
+cpp/component.s: cpp/component.cpp.s
+
+.PHONY : cpp/component.s
+
+# target to generate assembly for a file
+cpp/component.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/component.cpp.s
+.PHONY : cpp/component.cpp.s
+
+cpp/components/ProcessBar.o: cpp/components/ProcessBar.cpp.o
+
+.PHONY : cpp/components/ProcessBar.o
+
+# target to build an object file
+cpp/components/ProcessBar.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o
+.PHONY : cpp/components/ProcessBar.cpp.o
+
+cpp/components/ProcessBar.i: cpp/components/ProcessBar.cpp.i
+
+.PHONY : cpp/components/ProcessBar.i
+
+# target to preprocess a source file
+cpp/components/ProcessBar.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.i
+.PHONY : cpp/components/ProcessBar.cpp.i
+
+cpp/components/ProcessBar.s: cpp/components/ProcessBar.cpp.s
+
+.PHONY : cpp/components/ProcessBar.s
+
+# target to generate assembly for a file
+cpp/components/ProcessBar.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.s
+.PHONY : cpp/components/ProcessBar.cpp.s
+
+cpp/components/WButton.o: cpp/components/WButton.cpp.o
+
+.PHONY : cpp/components/WButton.o
+
+# target to build an object file
+cpp/components/WButton.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o
+.PHONY : cpp/components/WButton.cpp.o
+
+cpp/components/WButton.i: cpp/components/WButton.cpp.i
+
+.PHONY : cpp/components/WButton.i
+
+# target to preprocess a source file
+cpp/components/WButton.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.i
+.PHONY : cpp/components/WButton.cpp.i
+
+cpp/components/WButton.s: cpp/components/WButton.cpp.s
+
+.PHONY : cpp/components/WButton.s
+
+# target to generate assembly for a file
+cpp/components/WButton.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.s
+.PHONY : cpp/components/WButton.cpp.s
+
 library.o: library.cpp.o
 
 .PHONY : library.o
@@ -162,6 +270,33 @@ library.s: library.cpp.s
 library.cpp.s:
 	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/library.cpp.s
 .PHONY : library.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 music_ui_automoc.o: music_ui_automoc.cpp.o
 
@@ -190,33 +325,6 @@ music_ui_automoc.cpp.s:
 	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/music_ui_automoc.cpp.s
 .PHONY : music_ui_automoc.cpp.s
 
-myitem.o: myitem.cpp.o
-
-.PHONY : myitem.o
-
-# target to build an object file
-myitem.cpp.o:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.o
-.PHONY : myitem.cpp.o
-
-myitem.i: myitem.cpp.i
-
-.PHONY : myitem.i
-
-# target to preprocess a source file
-myitem.cpp.i:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.i
-.PHONY : myitem.cpp.i
-
-myitem.s: myitem.cpp.s
-
-.PHONY : myitem.s
-
-# target to generate assembly for a file
-myitem.cpp.s:
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.s
-.PHONY : myitem.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -227,15 +335,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... music_ui"
 	@echo "... music_ui_automoc"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
+	@echo "... cpp/component.o"
+	@echo "... cpp/component.i"
+	@echo "... cpp/component.s"
+	@echo "... cpp/components/ProcessBar.o"
+	@echo "... cpp/components/ProcessBar.i"
+	@echo "... cpp/components/ProcessBar.s"
+	@echo "... cpp/components/WButton.o"
+	@echo "... cpp/components/WButton.i"
+	@echo "... cpp/components/WButton.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... music_ui_automoc.o"
 	@echo "... music_ui_automoc.i"
 	@echo "... music_ui_automoc.s"
-	@echo "... myitem.o"
-	@echo "... myitem.i"
-	@echo "... myitem.s"
 .PHONY : help
 
 

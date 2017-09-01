@@ -81,33 +81,129 @@ CMakeFiles/music_ui.dir/library.cpp.o.provides: CMakeFiles/music_ui.dir/library.
 CMakeFiles/music_ui.dir/library.cpp.o.provides.build: CMakeFiles/music_ui.dir/library.cpp.o
 
 
-CMakeFiles/music_ui.dir/myitem.cpp.o: CMakeFiles/music_ui.dir/flags.make
-CMakeFiles/music_ui.dir/myitem.cpp.o: ../myitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/music_ui.dir/myitem.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/myitem.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/myitem.cpp
+CMakeFiles/music_ui.dir/cpp/component.cpp.o: CMakeFiles/music_ui.dir/flags.make
+CMakeFiles/music_ui.dir/cpp/component.cpp.o: ../cpp/component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/music_ui.dir/cpp/component.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/cpp/component.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp
 
-CMakeFiles/music_ui.dir/myitem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/myitem.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/myitem.cpp > CMakeFiles/music_ui.dir/myitem.cpp.i
+CMakeFiles/music_ui.dir/cpp/component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/cpp/component.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp > CMakeFiles/music_ui.dir/cpp/component.cpp.i
 
-CMakeFiles/music_ui.dir/myitem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/myitem.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/myitem.cpp -o CMakeFiles/music_ui.dir/myitem.cpp.s
+CMakeFiles/music_ui.dir/cpp/component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/cpp/component.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp -o CMakeFiles/music_ui.dir/cpp/component.cpp.s
 
-CMakeFiles/music_ui.dir/myitem.cpp.o.requires:
+CMakeFiles/music_ui.dir/cpp/component.cpp.o.requires:
 
-.PHONY : CMakeFiles/music_ui.dir/myitem.cpp.o.requires
+.PHONY : CMakeFiles/music_ui.dir/cpp/component.cpp.o.requires
 
-CMakeFiles/music_ui.dir/myitem.cpp.o.provides: CMakeFiles/music_ui.dir/myitem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/myitem.cpp.o.provides.build
-.PHONY : CMakeFiles/music_ui.dir/myitem.cpp.o.provides
+CMakeFiles/music_ui.dir/cpp/component.cpp.o.provides: CMakeFiles/music_ui.dir/cpp/component.cpp.o.requires
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/component.cpp.o.provides.build
+.PHONY : CMakeFiles/music_ui.dir/cpp/component.cpp.o.provides
 
-CMakeFiles/music_ui.dir/myitem.cpp.o.provides.build: CMakeFiles/music_ui.dir/myitem.cpp.o
+CMakeFiles/music_ui.dir/cpp/component.cpp.o.provides.build: CMakeFiles/music_ui.dir/cpp/component.cpp.o
+
+
+CMakeFiles/music_ui.dir/main.cpp.o: CMakeFiles/music_ui.dir/flags.make
+CMakeFiles/music_ui.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/music_ui.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/main.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/main.cpp
+
+CMakeFiles/music_ui.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/main.cpp > CMakeFiles/music_ui.dir/main.cpp.i
+
+CMakeFiles/music_ui.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/main.cpp -o CMakeFiles/music_ui.dir/main.cpp.s
+
+CMakeFiles/music_ui.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/music_ui.dir/main.cpp.o.requires
+
+CMakeFiles/music_ui.dir/main.cpp.o.provides: CMakeFiles/music_ui.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/music_ui.dir/main.cpp.o.provides
+
+CMakeFiles/music_ui.dir/main.cpp.o.provides.build: CMakeFiles/music_ui.dir/main.cpp.o
+
+
+CMakeFiles/music_ui.dir/Interface.cpp.o: CMakeFiles/music_ui.dir/flags.make
+CMakeFiles/music_ui.dir/Interface.cpp.o: ../Interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/music_ui.dir/Interface.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/Interface.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/Interface.cpp
+
+CMakeFiles/music_ui.dir/Interface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/Interface.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/Interface.cpp > CMakeFiles/music_ui.dir/Interface.cpp.i
+
+CMakeFiles/music_ui.dir/Interface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/Interface.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/Interface.cpp -o CMakeFiles/music_ui.dir/Interface.cpp.s
+
+CMakeFiles/music_ui.dir/Interface.cpp.o.requires:
+
+.PHONY : CMakeFiles/music_ui.dir/Interface.cpp.o.requires
+
+CMakeFiles/music_ui.dir/Interface.cpp.o.provides: CMakeFiles/music_ui.dir/Interface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/Interface.cpp.o.provides.build
+.PHONY : CMakeFiles/music_ui.dir/Interface.cpp.o.provides
+
+CMakeFiles/music_ui.dir/Interface.cpp.o.provides.build: CMakeFiles/music_ui.dir/Interface.cpp.o
+
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o: CMakeFiles/music_ui.dir/flags.make
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o: ../cpp/components/WButton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp > CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.i
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp -o CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.s
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.requires:
+
+.PHONY : CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.requires
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.provides: CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.requires
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.provides.build
+.PHONY : CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.provides
+
+CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.provides.build: CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o
+
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o: CMakeFiles/music_ui.dir/flags.make
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o: ../cpp/components/ProcessBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.cpp
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.cpp > CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.i
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.cpp -o CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.s
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.requires:
+
+.PHONY : CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.requires
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.provides: CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.requires
+	$(MAKE) -f CMakeFiles/music_ui.dir/build.make CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.provides.build
+.PHONY : CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.provides
+
+CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.provides.build: CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o
 
 
 CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o: CMakeFiles/music_ui.dir/flags.make
 CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o: music_ui_automoc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o -c /home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.cpp
 
 CMakeFiles/music_ui.dir/music_ui_automoc.cpp.i: cmake_force
@@ -132,30 +228,42 @@ CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o.provides.build: CMakeFiles/music_
 # Object files for target music_ui
 music_ui_OBJECTS = \
 "CMakeFiles/music_ui.dir/library.cpp.o" \
-"CMakeFiles/music_ui.dir/myitem.cpp.o" \
+"CMakeFiles/music_ui.dir/cpp/component.cpp.o" \
+"CMakeFiles/music_ui.dir/main.cpp.o" \
+"CMakeFiles/music_ui.dir/Interface.cpp.o" \
+"CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o" \
+"CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o" \
 "CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
 
 # External object files for target music_ui
 music_ui_EXTERNAL_OBJECTS =
 
-libmusic_ui.so: CMakeFiles/music_ui.dir/library.cpp.o
-libmusic_ui.so: CMakeFiles/music_ui.dir/myitem.cpp.o
-libmusic_ui.so: CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o
-libmusic_ui.so: CMakeFiles/music_ui.dir/build.make
-libmusic_ui.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1
-libmusic_ui.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1
-libmusic_ui.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1
-libmusic_ui.so: CMakeFiles/music_ui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libmusic_ui.so"
+../music_ui: CMakeFiles/music_ui.dir/library.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/cpp/component.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/main.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/Interface.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o
+../music_ui: CMakeFiles/music_ui.dir/build.make
+../music_ui: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1
+../music_ui: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1
+../music_ui: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1
+../music_ui: CMakeFiles/music_ui.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../music_ui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/music_ui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/music_ui.dir/build: libmusic_ui.so
+CMakeFiles/music_ui.dir/build: ../music_ui
 
 .PHONY : CMakeFiles/music_ui.dir/build
 
 CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/library.cpp.o.requires
-CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/myitem.cpp.o.requires
+CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/cpp/component.cpp.o.requires
+CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/main.cpp.o.requires
+CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/Interface.cpp.o.requires
+CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o.requires
+CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o.requires
 CMakeFiles/music_ui.dir/requires: CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o.requires
 
 .PHONY : CMakeFiles/music_ui.dir/requires

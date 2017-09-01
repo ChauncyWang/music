@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hy/PycharmProjects/python1/music_ui/Interface.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/Interface.cpp.o"
+  "/home/hy/PycharmProjects/python1/music_ui/cpp/component.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/cpp/component.cpp.o"
+  "/home/hy/PycharmProjects/python1/music_ui/cpp/components/ProcessBar.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/cpp/components/ProcessBar.cpp.o"
+  "/home/hy/PycharmProjects/python1/music_ui/cpp/components/WButton.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/cpp/components/WButton.cpp.o"
   "/home/hy/PycharmProjects/python1/music_ui/library.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/library.cpp.o"
+  "/home/hy/PycharmProjects/python1/music_ui/main.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/main.cpp.o"
   "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/music_ui_automoc.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/music_ui_automoc.cpp.o"
-  "/home/hy/PycharmProjects/python1/music_ui/myitem.cpp" "/home/hy/PycharmProjects/python1/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir/myitem.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
