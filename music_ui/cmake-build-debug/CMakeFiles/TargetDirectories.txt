@@ -1,4 +1,0 @@
-/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/music_ui.dir
-/home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug/CMakeFiles/music_ui_automoc.dir

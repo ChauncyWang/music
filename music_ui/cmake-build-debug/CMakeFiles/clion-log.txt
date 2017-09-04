@@ -1,4 +1,0 @@
-/home/chava/文档/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/chava/PycharmProjects/music_c/music_ui
--- Configuring done
--- Generating done
--- Build files have been written to: /home/chava/PycharmProjects/music_c/music_ui/cmake-build-debug
